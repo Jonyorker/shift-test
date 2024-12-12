@@ -70,5 +70,4 @@ class Transaction extends Model
             ->where('Direction', 1)
             ->get();
     }
-
 }

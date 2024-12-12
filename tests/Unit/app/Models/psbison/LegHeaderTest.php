@@ -16,7 +16,7 @@ class LegHeaderTest extends TestCase
     /**
      * @test
      */
-    public function manPowerProfile1()
+    public function manPowerProfile1(): void
     {
         $manpower_profile = ManpowerProfile::factory()->create();
         $LegHeader = LegHeader::factory()->create(['lgh_driver1' => $manpower_profile->mpp_id]);
@@ -27,7 +27,7 @@ class LegHeaderTest extends TestCase
     /**
      * @test
      */
-    public function manPowerProfile2()
+    public function manPowerProfile2(): void
     {
         $manpower_profile = ManpowerProfile::factory()->create();
         $LegHeader = LegHeader::factory()->create(['lgh_driver2' => $manpower_profile->mpp_id]);
@@ -38,7 +38,7 @@ class LegHeaderTest extends TestCase
     /**
      * @test
      */
-    public function stops()
+    public function stops(): void
     {
         $LegHeader = LegHeader::factory()->has(Stops::factory(5))->create();
 

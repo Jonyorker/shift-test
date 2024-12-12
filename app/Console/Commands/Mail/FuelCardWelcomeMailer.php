@@ -25,7 +25,7 @@ class FuelCardWelcomeMailer extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         Mail::to('jyork@bisontransport.com')->send(new PlatSci_Departed(123, 123, 123, 123, 123));
     }

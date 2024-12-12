@@ -28,7 +28,7 @@ class KevKommand extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         if ($this->argument('stp')) {
             $stop = PlatSciAutoprocess::where('stp', $this->argument('stp'))->where('formid', '2')->where('drv', 'MARR09');

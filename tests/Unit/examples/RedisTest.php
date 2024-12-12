@@ -10,7 +10,7 @@ class RedisTest extends TestCase
     /**
      * @test Redis functionality
      */
-    public function test_redis_connection()
+    public function test_redis_connection(): void
     {
 
         $value = 'This is a value stored in Redis';

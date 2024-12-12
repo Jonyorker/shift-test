@@ -10,7 +10,7 @@ class SimpleHasherTest extends TestCase
     /**
      * @test
      */
-    public function check()
+    public function check(): void
     {
         $result = (new SimpleHasher)->check('test', 'jB1Elv0wNs7Eek/9pJfwgg==');
         $this->assertTrue($result);
@@ -28,7 +28,7 @@ class SimpleHasherTest extends TestCase
     /**
      * @test
      */
-    public function decrypt()
+    public function decrypt(): void
     {
         // Precalculated value to test if it works fine
         $value = 'jB1Elv0wNs7Eek/9pJfwgg==';
@@ -40,7 +40,7 @@ class SimpleHasherTest extends TestCase
     /**
      * @test
      */
-    public function make()
+    public function make(): void
     {
 
         // Precalculated value to test if it works fine
@@ -53,7 +53,7 @@ class SimpleHasherTest extends TestCase
     /**
      * @test
      */
-    public function needsRehash()
+    public function needsRehash(): void
     {
         $this->assertNull((new SimpleHasher)->needsRehash('test'));
     }
