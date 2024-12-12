@@ -20,7 +20,7 @@ class BooleanTest extends TestCase
      *
      * @test
      */
-    public function boolean_acceptable($value)
+    public function boolean_acceptable($value): void
     {
 
         $validator = Validator::make(['myparam' => $value], ['myparam' => new Boolean]);

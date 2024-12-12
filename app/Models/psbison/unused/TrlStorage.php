@@ -2,6 +2,8 @@
 
 namespace App\Models\psbison\unused;
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\TrlStorageContact;
 use App\Models\TrlStorageInvoiceHistory;
 use App\Models\TrlStorageStatus;
@@ -62,7 +64,7 @@ class TrlStorage extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function stop()
+    public function stop(): BelongsTo
     {
         return $this->belongsTo('App\Models\psbison\unused\Stops', 'stp_number', 'stp_number');
     }
@@ -70,7 +72,7 @@ class TrlStorage extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function trlStorageStatus()
+    public function trlStorageStatus(): BelongsTo
     {
         return $this->belongsTo('App\Models\TrlStorageStatus', 'TrlStorageStatusId', 'TrlStorageStatusId');
     }
@@ -78,7 +80,7 @@ class TrlStorage extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function trlStorageContacts()
+    public function trlStorageContacts(): HasMany
     {
         return $this->hasMany('App\Models\TrlStorageContact', 'TrlStorageId', 'tstg_id');
     }
@@ -86,7 +88,7 @@ class TrlStorage extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function trlStorageInvoiceHistories()
+    public function trlStorageInvoiceHistories(): HasMany
     {
         return $this->hasMany('App\Models\TrlStorageInvoiceHistory', 'TrailerStorageId', 'tstg_id');
     }
@@ -94,7 +96,7 @@ class TrlStorage extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function expirations()
+    public function expirations(): HasMany
     {
         return $this->hasMany(\App\Models\psbison\unused\Expiration::class, 'trlStgID', 'tstg_id');
     }

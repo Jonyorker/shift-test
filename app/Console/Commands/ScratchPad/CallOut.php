@@ -23,7 +23,7 @@ class CallOut extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         $user = $this->argument('user');
         $this->line('Starting the call-out');

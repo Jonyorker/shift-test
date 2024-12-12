@@ -10,7 +10,7 @@ class RabbitTest extends TestCase
     /**
      * @test Redis functionality
      */
-    public function test_rabbit_connection()
+    public function test_rabbit_connection(): void
     {
 
         TestSend::dispatch([

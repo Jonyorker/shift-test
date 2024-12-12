@@ -10,7 +10,7 @@ class ConstantTest extends TestCase
     /**
      * @test Reflection Class on constants
      */
-    public function constant_reflection_class()
+    public function constant_reflection_class(): void
     {
 
         $constants = emailGroups::getConstants();

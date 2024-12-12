@@ -10,7 +10,7 @@ class StopsAutoActualizationByTimeTest extends TestCase
     /**
      * @test
      */
-    public function getRecords()
+    public function getRecords(): void
     {
         $result = (new StopsAutoActualizationByTime)->getRecords(null);
 

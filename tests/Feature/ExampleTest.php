@@ -14,7 +14,7 @@ class ExampleTest extends TestCase
     /**
      * @test
      */
-    public function creating_a_user()
+    public function creating_a_user(): void
     {
         UserList::factory()->create([
             'first_name' => 'jon',
@@ -28,7 +28,7 @@ class ExampleTest extends TestCase
     /**
      * @test
      */
-    public function creating_a_user2()
+    public function creating_a_user2(): void
     {
         UserList::factory()->create([
             'first_name' => 'jon',

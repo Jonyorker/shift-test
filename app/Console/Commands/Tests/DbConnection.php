@@ -28,7 +28,7 @@ class DbConnection extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         Config::set('app.debug', true);
         foreach (config('database.connections') as $key => $connection) {

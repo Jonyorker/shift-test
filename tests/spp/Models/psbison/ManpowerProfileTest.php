@@ -12,7 +12,7 @@ class ManpowerProfileTest extends TestCase
     /**
      * @test
      */
-    public function legHeaders()
+    public function legHeaders(): void
     {
         $manpower_profile = ManpowerProfile::factory()->create();
         LegHeader::factory()->create(['lgh_driver1' => $manpower_profile->mpp_id]);
@@ -24,7 +24,7 @@ class ManpowerProfileTest extends TestCase
     /**
      * @test
      */
-    public function events()
+    public function events(): void
     {
         $manpower_profile = ManpowerProfile::factory()->create();
         Event::factory()->create(['evt_driver1' => $manpower_profile->mpp_id]);
