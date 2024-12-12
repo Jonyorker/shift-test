@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 abstract class TestCase extends BaseTestCase
 {
-
     protected function setUp(): void
     {
         // Runs at the begging on every test.

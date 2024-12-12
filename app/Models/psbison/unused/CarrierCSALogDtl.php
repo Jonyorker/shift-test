@@ -2,11 +2,11 @@
 
 namespace App\Models\psbison\unused;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\CarrierCSA;
 use App\Models\CarrierCSALogHdr;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @property int $id
@@ -37,25 +37,16 @@ class CarrierCSALogDtl extends Model
      */
     protected $connection = 'psbison';
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function carrierCSAs(): HasMany
     {
         return $this->hasMany('App\Models\CarrierCSA', 'carriercsalogdtl_id');
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
     public function carrierCSALogHdr(): BelongsTo
     {
         return $this->belongsTo('App\Models\CarrierCSALogHdr');
     }
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
     public function expirations(): HasMany
     {
         return $this->hasMany(\App\Models\psbison\unused\Expiration::class, 'carriercsalogdtl_id');
