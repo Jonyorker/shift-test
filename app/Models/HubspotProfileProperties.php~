@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $hubspot_profile_id
+ * @property integer $hubspot_resources_profile_properties_id
+ * @property string $value
+ * @property string $last_modified
+ */
+class HubspotProfileProperties extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'hubspot_profile_id', 'hubspot_resources_profile_properties_id', 'value', 'last_modified'];
+}

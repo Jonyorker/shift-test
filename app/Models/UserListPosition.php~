@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $user_list_company_id
+ * @property integer $is_primary
+ * @property string $start_date
+ * @property string $end_date
+ * @property string $terminal
+ * @property string $org_level_one
+ * @property string $org_level_two
+ * @property string $job_title
+ * @property string $reports_to
+ * @property string $fleet
+ * @property integer $is_supervisor
+ * @property integer $is_driver_supervisor
+ * @property integer $is_mechanic
+ * @property integer $is_warehouse
+ * @property integer $is_driver
+ * @property string $created_date
+ * @property string $updated_date
+ * @property string $pay_identifier
+ * @property string $time_type
+ * @property string $job_profile
+ */
+class UserListPosition extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'user_list_company_id', 'is_primary', 'start_date', 'end_date', 'terminal', 'org_level_one', 'org_level_two', 'job_title', 'reports_to', 'fleet', 'is_supervisor', 'is_driver_supervisor', 'is_mechanic', 'is_warehouse', 'is_driver', 'created_date', 'updated_date', 'pay_identifier', 'time_type', 'job_profile'];
+}

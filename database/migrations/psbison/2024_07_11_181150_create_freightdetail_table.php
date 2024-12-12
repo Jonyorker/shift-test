@@ -1,0 +1,146 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::connection('psbison')->create('freightdetail', function (Blueprint $table) {
+            $table->integer('fgt_number');
+            $table->string('cmd_code', 8)->nullable();
+            $table->float('fgt_weight', 53, 0)->nullable();
+            $table->string('fgt_weightunit', 6)->nullable();
+            $table->string('fgt_description', 60)->nullable();
+            $table->integer('stp_number')->nullable();
+            $table->decimal('fgt_count', 10)->nullable();
+            $table->string('fgt_countunit', 6)->nullable();
+            $table->float('fgt_volume', 53, 0)->nullable();
+            $table->string('fgt_volumeunit', 6)->nullable();
+            $table->smallInteger('fgt_lowtemp')->nullable();
+            $table->smallInteger('fgt_hitemp')->nullable();
+            $table->smallInteger('fgt_sequence')->nullable();
+            $table->float('fgt_length', 53, 0)->nullable();
+            $table->string('fgt_lengthunit', 6)->nullable();
+            $table->float('fgt_height', 53, 0)->nullable();
+            $table->string('fgt_heightunit', 6)->nullable();
+            $table->float('fgt_width', 53, 0)->nullable();
+            $table->string('fgt_widthunit', 6)->nullable();
+            $table->string('timestamp')->nullable();
+            $table->string('fgt_reftype', 6)->nullable();
+            $table->string('fgt_refnum', 30)->nullable();
+            $table->float('fgt_quantity', 53, 0)->nullable();
+            $table->decimal('fgt_rate', 19, 4)->nullable();
+            $table->decimal('fgt_charge', 19, 4)->nullable();
+            $table->string('fgt_rateunit', 6)->nullable();
+            $table->string('cht_itemcode', 6)->nullable();
+            $table->string('cht_basisunit', 6)->nullable();
+            $table->string('fgt_unit', 6)->nullable();
+            $table->tinyInteger('skip_trigger')->nullable();
+            $table->float('tare_weight', 53, 0)->nullable();
+            $table->string('tare_weightunit', 6)->nullable();
+            $table->float('fgt_pallets_in', 53, 0)->nullable();
+            $table->float('fgt_pallets_out', 53, 0)->nullable();
+            $table->float('fgt_pallets_on_trailer', 53, 0)->nullable();
+            $table->float('fgt_carryins1', 53, 0)->nullable();
+            $table->float('fgt_carryins2', 53, 0)->nullable();
+            $table->string('fgt_stackable', 1)->nullable();
+            $table->float('fgt_ratingquantity', 53, 0)->nullable();
+            $table->string('fgt_ratingunit', 6)->nullable();
+            $table->smallInteger('fgt_quantity_type')->nullable();
+            $table->float('fgt_ordered_count', null, 0)->nullable();
+            $table->float('fgt_ordered_weight', 53, 0)->nullable();
+            $table->integer('tar_number')->nullable();
+            $table->string('tar_tariffnumber', 13)->nullable();
+            $table->string('tar_tariffitem', 13)->nullable();
+            $table->smallInteger('fgt_charge_type')->nullable();
+            $table->smallInteger('fgt_rate_type')->nullable();
+            $table->decimal('fgt_ordered_volume', 18, 0)->nullable();
+            $table->decimal('fgt_ordered_loadingmeters', 18, 0)->nullable();
+            $table->string('fgt_pallet_type', 6)->nullable();
+            $table->decimal('fgt_loadingmeters', 12, 4)->nullable();
+            $table->string('fgt_loadingmetersunit', 6)->nullable();
+            $table->string('fgt_additionl_description', 25)->nullable();
+            $table->float('fgt_specific_flashpoint', 53, 0)->nullable();
+            $table->string('fgt_specific_flashpoint_unit', 6)->nullable();
+            $table->string('fgt_tmstatus', 6)->nullable();
+            $table->decimal('cpr_density', 9, 4)->nullable();
+            $table->string('scm_subcode', 8)->nullable();
+            $table->string('fgt_terms', 6)->nullable();
+            $table->string('fgt_consignee', 8)->nullable();
+            $table->string('fgt_shipper', 8)->nullable();
+            $table->string('fgt_leg_origin', 8)->nullable();
+            $table->string('fgt_leg_dest', 8)->nullable();
+            $table->decimal('fgt_count2', 10)->nullable();
+            $table->string('fgt_count2unit', 6)->nullable();
+            $table->integer('fgt_bolid')->nullable();
+            $table->string('fgt_bol_status', 6)->nullable();
+            $table->string('fgt_osdreason', 6)->nullable();
+            $table->integer('fgt_osdquantity')->nullable();
+            $table->string('fgt_osdunit', 6)->nullable();
+            $table->string('fgt_osdcomment')->nullable();
+            $table->string('fgt_packageunit', 6)->nullable();
+            $table->integer('fgt_parentcmd_number')->nullable();
+            $table->integer('fgt_parentcmd_fgt_number')->nullable();
+            $table->integer('fgt_display_sequence')->nullable();
+            $table->string('fgt_accountof', 8)->nullable();
+            $table->string('fgt_volume2unit', 6)->nullable();
+            $table->string('fgt_bol_image', 1)->nullable();
+            $table->dateTime('fgt_bol_image_date')->nullable();
+            $table->string('fgt_osdstatus', 6)->nullable();
+            $table->dateTime('fgt_osdopendate')->nullable();
+            $table->dateTime('fgt_osdclosedate')->nullable();
+            $table->decimal('fgt_osdorigclaimamount', 19, 4)->nullable();
+            $table->decimal('fgt_osdamtpaid', 19, 4)->nullable();
+            $table->decimal('fgt_osdamtreceived', 19, 4)->nullable();
+            $table->float('fgt_dispatched_quantity', 53, 0)->nullable();
+            $table->string('fgt_dispatched_unit', 6)->nullable();
+            $table->float('fgt_actual_quantity', 53, 0)->nullable();
+            $table->string('fgt_actual_unit', 6)->nullable();
+            $table->float('fgt_billable_quantity', 53, 0)->nullable();
+            $table->string('fgt_billable_unit', 6)->nullable();
+            $table->string('fgt_supplier', 8)->nullable();
+            $table->float('fgt_volume2', 53, 0)->nullable();
+            $table->string('fgt_volumeunit2', 6)->nullable();
+            $table->string('tank_loc', 10)->nullable();
+            $table->string('fgt_pincode', 50)->nullable();
+            $table->float('fgt_deliverytank1', 53, 0)->nullable();
+            $table->float('fgt_deliverytank2', 53, 0)->nullable();
+            $table->float('fgt_deliverytank3', 53, 0)->nullable();
+            $table->float('fgt_deliverytank4', 53, 0)->nullable();
+            $table->float('fgt_deliverytank5', 53, 0)->nullable();
+            $table->float('fgt_deliverytank6', 53, 0)->nullable();
+            $table->float('fgt_deliverytank7', 53, 0)->nullable();
+            $table->float('fgt_deliverytank8', 53, 0)->nullable();
+            $table->float('fgt_deliverytank9', 53, 0)->nullable();
+            $table->float('fgt_deliverytank10', 53, 0)->nullable();
+            $table->string('fgt_asset', 13)->nullable();
+            $table->string('fgt_tempunit', 6)->nullable();
+            $table->integer('fgt_number_copied_fromorder')->nullable();
+            $table->string('fgt_hazmat_class_qualifier', 6)->nullable();
+            $table->string('fgt_hazmat_shipping_name_qualifier', 6)->nullable();
+            $table->decimal('fgt_size', 5)->nullable();
+            $table->integer('order_hdrnumber')->nullable();
+            $table->string('fgt_app_eqcodes', 256)->nullable();
+            $table->integer('fgt_deficit_row')->nullable();
+            $table->decimal('fgt_rate_per', 10)->nullable();
+            $table->decimal('fgt_sub_charge', 10)->nullable();
+            $table->decimal('fgt_discount_rate', 10)->nullable();
+            $table->decimal('fgt_discount_per', 10)->nullable();
+            $table->decimal('fgt_discount', 10)->nullable();
+            $table->decimal('fgt_gross_manual', 10)->nullable();
+            $table->integer('fgt_disc_tar_number')->nullable();
+            $table->decimal('fgt_discount_qty', 10)->nullable();
+            $table->string('cmd_rateclass', 8)->nullable();
+            $table->integer('fgt_ShipperTankId')->nullable();
+            $table->dateTime('INS_TIMESTAMP');
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::connection('psbison')->dropIfExists('freightdetail');
+    }
+};

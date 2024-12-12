@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $website
+ * @property string $source
+ * @property string $requested_date
+ * @property string $name
+ * @property string $email_address
+ * @property string $phone_number
+ * @property string $company
+ * @property string $ip_address
+ */
+class RequestAQuote extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'website', 'source', 'requested_date', 'name', 'email_address', 'phone_number', 'company', 'ip_address'];
+}

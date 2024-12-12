@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_product_id
+ * @property string $created_date
+ * @property string $label
+ * @property string $route_name
+ * @property string $version
+ * @property integer $parent_id
+ * @property integer $child_id
+ * @property string $updated_date
+ * @property integer $is_active
+ * @property integer $is_development
+ * @property integer $is_certification
+ * @property integer $is_production
+ * @property string $initial_version
+ */
+class RbacApplicationRoutes extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_product_id', 'created_date', 'label', 'route_name', 'version', 'parent_id', 'child_id', 'updated_date', 'is_active', 'is_development', 'is_certification', 'is_production', 'initial_version'];
+}

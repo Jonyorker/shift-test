@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $chat_active_window_tracking_id
+ * @property string $window_name
+ * @property integer $window_id
+ * @property boolean $is_active_window
+ */
+class ChatActiveWindowTrackingWindows extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'chat_active_window_tracking_id', 'window_name', 'window_id', 'is_active_window'];
+}

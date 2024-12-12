@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $notification_script_id
+ * @property integer $notification_pref_id
+ * @property string $created_on
+ * @property string $send_date
+ * @property string $to
+ * @property string $from
+ * @property string $type
+ * @property string $subject
+ * @property string $message
+ * @property integer $parent_id
+ * @property integer $is_test
+ * @property string $cc
+ * @property string $bcc
+ * @property integer $is_sent
+ * @property string $additional_data
+ */
+class NotificationQue extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'notification_script_id', 'notification_pref_id', 'created_on', 'send_date', 'to', 'from', 'type', 'subject', 'message', 'parent_id', 'is_test', 'cc', 'bcc', 'is_sent', 'additional_data'];
+}

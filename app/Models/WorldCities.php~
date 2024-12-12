@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property string $Country
+ * @property string $City
+ * @property string $AccentCity
+ * @property string $Region
+ * @property string $Population
+ * @property string $Latitude
+ * @property string $Longitude
+ */
+class WorldCities extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['Country', 'City', 'AccentCity', 'Region', 'Population', 'Latitude', 'Longitude'];
+}

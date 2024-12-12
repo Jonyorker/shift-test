@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $agent_id
+ * @property string $emp_id
+ * @property string $active_date
+ * @property string $deactivate_date
+ */
+class PhoneReportAgents extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'agent_id', 'emp_id', 'active_date', 'deactivate_date'];
+}

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $name
+ * @property string $email
+ * @property string $domian
+ * @property string $distinguished_name
+ * @property string $members
+ * @property integer $APP_DIMS
+ */
+class LdapEmailGroups extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'name', 'email', 'domian', 'distinguished_name', 'members', 'APP_DIMS'];
+}

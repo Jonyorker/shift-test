@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $title
+ * @property string $intro
+ * @property string $description
+ * @property string $start_date
+ * @property string $end_date
+ * @property string $modified_date
+ * @property string $website
+ * @property string $emp_id
+ * @property integer $is_external
+ * @property string $external_url
+ * @property integer $is_active
+ * @property string $thumbnail_url
+ */
+class WebsiteNews extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'title', 'intro', 'description', 'start_date', 'end_date', 'modified_date', 'website', 'emp_id', 'is_external', 'external_url', 'is_active', 'thumbnail_url'];
+}

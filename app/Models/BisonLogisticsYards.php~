@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $yard_code
+ * @property string $sequence_yard_code
+ * @property string $terminal_yard_code
+ * @property string $terminal
+ * @property string $created_by
+ * @property string $created_date
+ * @property string $updated_by
+ * @property string $updated_date
+ * @property integer $is_active
+ */
+class BisonLogisticsYards extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['yard_code', 'sequence_yard_code', 'terminal_yard_code', 'terminal', 'created_by', 'created_date', 'updated_by', 'updated_date', 'is_active'];
+}

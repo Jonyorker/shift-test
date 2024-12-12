@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $reason
+ * @property integer $is_active
+ * @property integer $is_visible
+ */
+class ImageRejectedReasons extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'reason', 'is_active', 'is_visible'];
+}

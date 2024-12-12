@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $parent_id
+ * @property string $created_by
+ * @property string $created_date
+ * @property string $activity_date
+ * @property string $activity_type
+ * @property integer $mov_number
+ * @property string $primary_driver_id
+ * @property string $primary_contact
+ * @property string $secondary_driver_id
+ * @property string $secondary_contact
+ * @property string $company_id
+ * @property string $company_name
+ * @property string $contact_type
+ * @property string $unit_number
+ * @property string $license_plate
+ * @property string $yard_violation
+ * @property integer $has_ppe
+ * @property integer $has_equipment_damage
+ * @property string $equipment_damage
+ * @property string $yard_id
+ * @property string $scheduled_entry_date
+ * @property string $scheduled_exit_date
+ * @property string $added_date
+ * @property string $comments
+ * @property integer $lgh_number
+ */
+class YardMonitorHistorical extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'parent_id', 'created_by', 'created_date', 'activity_date', 'activity_type', 'mov_number', 'primary_driver_id', 'primary_contact', 'secondary_driver_id', 'secondary_contact', 'company_id', 'company_name', 'contact_type', 'unit_number', 'license_plate', 'yard_violation', 'has_ppe', 'has_equipment_damage', 'equipment_damage', 'yard_id', 'scheduled_entry_date', 'scheduled_exit_date', 'added_date', 'comments', 'lgh_number'];
+}

@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_product_id
+ * @property integer $is_active
+ * @property string $email
+ * @property string $password
+ * @property string $ip_address
+ * @property string $last_login
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $formatted_name
+ * @property string $formatted_name_reversed
+ * @property string $aka_name
+ * @property string $user_id
+ * @property integer $password_reset
+ * @property integer $force_password_reset
+ * @property integer $force_email_reset
+ */
+class RbacUsers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_product_id', 'is_active', 'email', 'password', 'ip_address', 'last_login', 'first_name', 'last_name', 'formatted_name', 'formatted_name_reversed', 'aka_name', 'user_id', 'password_reset', 'force_password_reset', 'force_email_reset'];
+}

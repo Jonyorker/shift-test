@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_product_id
+ * @property string $version
+ * @property string $date_created
+ * @property string $date_expired
+ */
+class RbacProductsVersions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_product_id', 'version', 'date_created', 'date_expired'];
+}

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_product_id
+ * @property integer $rbac_role_id
+ * @property boolean $is_active
+ * @property string $company_id
+ * @property string $org_level_one
+ * @property string $org_level_two
+ */
+class RbacDepartmentRoles extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_product_id', 'rbac_role_id', 'is_active', 'company_id', 'org_level_one', 'org_level_two'];
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $user_tracking_id
+ * @property string $fleet
+ */
+class ChatUserTrackingFleets extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'user_tracking_id', 'fleet'];
+}

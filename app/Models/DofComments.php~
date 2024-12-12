@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $comments
+ * @property string $email
+ * @property string $emp_id
+ * @property string $stp_number
+ * @property string $received_date
+ * @property string $exported_date
+ */
+class DofComments extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'comments', 'email', 'emp_id', 'stp_number', 'received_date', 'exported_date'];
+}

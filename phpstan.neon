@@ -1,0 +1,19 @@
+parameters:
+  paths:
+    - app
+    - config
+  excludePaths:
+    - app/Models/bisonweb/unused/
+    - app/Models/driverservice/unused/
+    - app/Models/psbison/unused/
+    - app/Providers
+    - app/Http/Middleware
+    - app/Console/Commands/ScratchPad
+    - app/Helpers/Libraries/PlatformSci
+  level: 6
+  type_coverage:
+          return: 99
+          param: 99
+          property: 99
+          constant: 99
+  treatPhpDocTypesAsCertain: false

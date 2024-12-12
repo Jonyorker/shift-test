@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $year_created
+ * @property string $award
+ * @property string $note
+ */
+class DinnerDanceAwards extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'year_created', 'award', 'note'];
+}

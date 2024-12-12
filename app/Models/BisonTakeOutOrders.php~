@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $employee_id
+ * @property string $terminal
+ * @property integer $bison_take_out_menu_id
+ * @property integer $quantity
+ * @property string $order_date
+ * @property string $delivery_date
+ */
+class BisonTakeOutOrders extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['employee_id', 'terminal', 'bison_take_out_menu_id', 'quantity', 'order_date', 'delivery_date'];
+}

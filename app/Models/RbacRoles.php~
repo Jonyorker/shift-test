@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_product_id
+ * @property string $label
+ * @property string $code
+ * @property string $notes
+ * @property integer $is_active
+ * @property integer $is_default
+ * @property integer $is_auth_default
+ * @property integer $is_employee_default
+ * @property integer $is_auto_assignment
+ * @property integer $admin_assigment_only
+ */
+class RbacRoles extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_product_id', 'label', 'code', 'notes', 'is_active', 'is_default', 'is_auth_default', 'is_employee_default', 'is_auto_assignment', 'admin_assigment_only'];
+}

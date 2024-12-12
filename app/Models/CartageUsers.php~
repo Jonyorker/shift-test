@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $user_id
+ * @property string $phone_number
+ * @property string $start_date
+ * @property string $end_date
+ * @property integer $is_active
+ * @property string $first_name
+ * @property string $email
+ * @property string $fleet
+ * @property string $car_id
+ */
+class CartageUsers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'user_id', 'phone_number', 'start_date', 'end_date', 'is_active', 'first_name', 'email', 'fleet', 'car_id'];
+}

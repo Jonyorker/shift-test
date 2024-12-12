@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_application_routes_id
+ * @property integer $rbac_roles_id
+ * @property integer $is_allowed
+ */
+class RbacApplicationPermissions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_application_routes_id', 'rbac_roles_id', 'is_allowed'];
+}

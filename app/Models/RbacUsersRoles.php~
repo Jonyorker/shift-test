@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_users_id
+ * @property integer $rbac_roles_id
+ * @property string $company_id
+ */
+class RbacUsersRoles extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_users_id', 'rbac_roles_id', 'company_id'];
+}

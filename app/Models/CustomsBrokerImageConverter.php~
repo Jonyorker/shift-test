@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $customs_broker_package_id
+ * @property string $file_uuid
+ * @property boolean $is_processed
+ */
+class CustomsBrokerImageConverter extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'customs_broker_package_id', 'file_uuid', 'is_processed'];
+}

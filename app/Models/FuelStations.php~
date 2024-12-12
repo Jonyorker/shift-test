@@ -1,0 +1,63 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $created_date
+ * @property integer $lgh_number
+ * @property integer $locid
+ * @property string $fueltype
+ * @property string $name
+ * @property string $city
+ * @property string $prov
+ * @property float $lat
+ * @property float $lng
+ * @property float $along
+ * @property float $dist
+ * @property float $price
+ * @property float $exch
+ * @property float $ifta
+ * @property float $retail
+ * @property float $rackprice
+ * @property float $federaltax
+ * @property float $freightcost
+ * @property float $statetax
+ * @property float $otherfees
+ * @property integer $discounted
+ * @property string $startdate
+ * @property string $addr
+ * @property string $phone
+ * @property string $fax
+ * @property integer $efsid
+ * @property integer $istp
+ * @property integer $isactive
+ * @property integer $scale
+ * @property integer $bulkdef
+ * @property string $facilities
+ * @property integer $parking
+ * @property integer $restaurant
+ * @property integer $showers
+ * @property string $note
+ * @property integer $optimal
+ * @property string $lgh_driver1
+ * @property string $lgh_carrier
+ * @property string $country
+ * @property integer $sort_by
+ * @property integer $rebate
+ * @property boolean $included
+ * @property integer $carrier_fuel_plan_id
+ * @property integer $carrier_fuel_plan_route_id
+ * @property integer $lgh_miles
+ * @property float $price_cad
+ * @property float $price_usd
+ */
+class FuelStations extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'created_date', 'lgh_number', 'locid', 'fueltype', 'name', 'city', 'prov', 'lat', 'lng', 'along', 'dist', 'price', 'exch', 'ifta', 'retail', 'rackprice', 'federaltax', 'freightcost', 'statetax', 'otherfees', 'discounted', 'startdate', 'addr', 'phone', 'fax', 'efsid', 'istp', 'isactive', 'scale', 'bulkdef', 'facilities', 'parking', 'restaurant', 'showers', 'note', 'optimal', 'lgh_driver1', 'lgh_carrier', 'country', 'sort_by', 'rebate', 'included', 'carrier_fuel_plan_id', 'carrier_fuel_plan_route_id', 'lgh_miles', 'price_cad', 'price_usd'];
+}

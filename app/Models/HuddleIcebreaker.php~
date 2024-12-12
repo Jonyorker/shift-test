@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $title
+ * @property string $icebreaker
+ * @property integer $huddle_resource_icebreaker_group_id
+ * @property integer $is_active
+ */
+class HuddleIcebreaker extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'title', 'icebreaker', 'huddle_resource_icebreaker_group_id', 'is_active'];
+}

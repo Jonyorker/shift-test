@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $site_notification_id
+ * @property string $role
+ * @property integer $has_access
+ * @property string $terminal
+ */
+class SiteNotificationAccess extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'site_notification_id', 'role', 'has_access', 'terminal'];
+}

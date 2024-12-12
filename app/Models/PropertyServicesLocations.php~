@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $location
+ */
+class PropertyServicesLocations extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'location'];
+}

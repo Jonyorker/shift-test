@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $employee_id
+ * @property string $ip_address
+ * @property integer $site_notification_id
+ * @property string $created_date
+ */
+class SiteNotificationPostData extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'employee_id', 'ip_address', 'site_notification_id', 'created_date'];
+}

@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $uid
+ * @property string $ip_address
+ * @property string $emp_id
+ * @property string $created_date
+ * @property string $added_date
+ * @property string $modified_date
+ * @property string $modified_by
+ * @property string $name
+ * @property string $url
+ * @property integer $file_size_in_bytes
+ * @property string $current_md5
+ * @property integer $is_active
+ */
+class ImageUploaderImages extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'uid', 'ip_address', 'emp_id', 'created_date', 'added_date', 'modified_date', 'modified_by', 'name', 'url', 'file_size_in_bytes', 'current_md5', 'is_active'];
+}

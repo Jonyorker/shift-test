@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $label
+ * @property string $value
+ * @property string $dept_name
+ * @property integer $is_active
+ * @property integer $default_queue
+ * @property integer $is_close
+ */
+class ChatReasons extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'label', 'value', 'dept_name', 'is_active', 'default_queue', 'is_close'];
+}

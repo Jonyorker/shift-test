@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $driver_code
+ * @property integer $expiration_company_detail_id
+ * @property integer $expiration_assigned_reason_id
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $updated_date
+ * @property string $updated_by
+ * @property string $expiration_date
+ * @property string $completed_date
+ * @property integer $priority
+ * @property string $comment
+ */
+class ExpirationDriverHistory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'driver_code', 'expiration_company_detail_id', 'expiration_assigned_reason_id', 'created_date', 'created_by', 'updated_date', 'updated_by', 'expiration_date', 'completed_date', 'priority', 'comment'];
+}

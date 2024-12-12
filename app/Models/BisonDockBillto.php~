@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $billto_code
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $updated_date
+ * @property string $updated_by
+ */
+class BisonDockBillto extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['billto_code', 'created_date', 'created_by', 'updated_date', 'updated_by'];
+}

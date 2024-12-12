@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property string $id
+ * @property integer $seg
+ * @property string $pr
+ * @property string $ms
+ * @property string $mv
+ * @property string $ps
+ * @property string $pv
+ * @property string $mc
+ * @property integer $n
+ * @property string $clr
+ * @property string $updated_date
+ * @property integer $level
+ */
+class HighwayConditions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'seg', 'pr', 'ms', 'mv', 'ps', 'pv', 'mc', 'n', 'clr', 'updated_date', 'level'];
+}

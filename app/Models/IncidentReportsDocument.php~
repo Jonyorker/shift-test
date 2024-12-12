@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $incident_reports_id
+ * @property string $name
+ * @property string $mime
+ * @property integer $length
+ * @property string $ext
+ * @property string $hash
+ * @property string $emp_id
+ * @property string $date_added
+ */
+class IncidentReportsDocument extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'incident_reports_id', 'name', 'mime', 'length', 'ext', 'hash', 'emp_id', 'date_added'];
+}

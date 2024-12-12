@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $truck_id
+ * @property string $pay_to
+ * @property string $create_date
+ * @property integer $is_primary
+ * @property string $filename
+ * @property integer $uploaded
+ * @property string $image_lookup_guid
+ */
+class SettlementSheets extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'truck_id', 'pay_to', 'create_date', 'is_primary', 'filename', 'uploaded', 'image_lookup_guid'];
+}

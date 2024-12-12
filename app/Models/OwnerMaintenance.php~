@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $unit_number
+ * @property string $mainteance_date
+ * @property integer $maintenance_record_id
+ */
+class OwnerMaintenance extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'unit_number', 'mainteance_date', 'maintenance_record_id'];
+}

@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $inviter_id
+ * @property string $invitee_id
+ * @property string $start_time
+ * @property string $end_time
+ * @property string $session_id
+ * @property string $token
+ * @property integer $alert_sent
+ * @property string $sent_date
+ * @property string $created_date
+ */
+class DriverOneToOneVideo extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'inviter_id', 'invitee_id', 'start_time', 'end_time', 'session_id', 'token', 'alert_sent', 'sent_date', 'created_date'];
+}

@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $item_num
+ * @property string $description
+ * @property string $category
+ * @property string $manufacturer
+ * @property string $proprietary
+ * @property float $std_cost
+ * @property string $vmrs
+ * @property integer $active
+ * @property string $stocked
+ */
+class SupplierListShopBackup extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'item_num', 'description', 'category', 'manufacturer', 'proprietary', 'std_cost', 'vmrs', 'active', 'stocked'];
+}

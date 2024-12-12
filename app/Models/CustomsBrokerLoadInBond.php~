@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $ord_hdrnumber
+ * @property integer $mov_number
+ * @property string $trl_id
+ * @property string $ord_billto
+ * @property string $pars
+ * @property string $location
+ * @property string $reason
+ * @property string $comments
+ * @property integer $bond_status_id
+ * @property string $created_date
+ * @property string $created_by
+ */
+class CustomsBrokerLoadInBond extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'ord_hdrnumber', 'mov_number', 'trl_id', 'ord_billto', 'pars', 'location', 'reason', 'comments', 'bond_status_id', 'created_date', 'created_by'];
+}

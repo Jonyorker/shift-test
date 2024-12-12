@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $training_slug
+ * @property string $used_id
+ */
+class TrainingExcludedUsers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'training_slug', 'used_id'];
+}

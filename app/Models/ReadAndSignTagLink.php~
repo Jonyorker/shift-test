@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $read_and_sign_id
+ * @property integer $read_and_sign_tag_id
+ */
+class ReadAndSignTagLink extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'read_and_sign_id', 'read_and_sign_tag_id'];
+}

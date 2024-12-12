@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $company_id
+ * @property integer $ord_number
+ * @property integer $move_number
+ * @property string $carrier_id
+ * @property integer $car_account
+ * @property integer $car_contract
+ * @property string $gl_code
+ * @property integer $ref_number
+ * @property integer $approved_amount
+ * @property string $approved_currency
+ * @property string $created_by
+ * @property string $created_date
+ */
+class EfsFuelAdvanceCarriers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'company_id', 'ord_number', 'move_number', 'carrier_id', 'car_account', 'car_contract', 'gl_code', 'ref_number', 'approved_amount', 'approved_currency', 'created_by', 'created_date'];
+}

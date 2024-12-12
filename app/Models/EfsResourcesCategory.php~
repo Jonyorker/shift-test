@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $name
+ * @property string $base_gl
+ * @property integer $is_active
+ * @property integer $folder_filecode
+ * @property string $company_id
+ * @property string $driver_type
+ * @property float $auto_process_limit
+ * @property boolean $is_carrier
+ */
+class EfsResourcesCategory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'name', 'base_gl', 'is_active', 'folder_filecode', 'company_id', 'driver_type', 'auto_process_limit', 'is_carrier'];
+}

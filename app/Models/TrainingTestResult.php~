@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $training_test_id
+ * @property string $question
+ * @property string $answer
+ */
+class TrainingTestResult extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'training_test_id', 'question', 'answer'];
+}

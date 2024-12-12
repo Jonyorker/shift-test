@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $form_id
+ * @property integer $index_key
+ * @property string $emp_id
+ * @property string $created_date
+ */
+class FormIndex extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'form_id', 'index_key', 'emp_id', 'created_date'];
+}

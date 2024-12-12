@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $customs_broker_package_id
+ * @property string $note
+ * @property string $created_by
+ * @property string $created_date
+ */
+class CustomsBrokerFaxNotes extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'customs_broker_package_id', 'note', 'created_by', 'created_date'];
+}

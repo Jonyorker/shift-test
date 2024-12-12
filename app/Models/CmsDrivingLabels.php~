@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $type
+ * @property string $name
+ * @property integer $sort
+ * @property string $created_date
+ */
+class CmsDrivingLabels extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'type', 'name', 'sort', 'created_date'];
+}

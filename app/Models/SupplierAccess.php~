@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $supplier_id
+ * @property string $access
+ */
+class SupplierAccess extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'supplier_id', 'access'];
+}

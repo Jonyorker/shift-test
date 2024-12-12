@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $ID
+ * @property string $date_trigger
+ * @property string $userid
+ * @property integer $PrevValue
+ * @property integer $NewValue
+ * @property string $updatetype
+ * @property string $appname
+ * @property integer $Notification_ID
+ * @property integer $Notification_pref_ID
+ */
+class NotificationFlagTracking extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['ID', 'date_trigger', 'userid', 'PrevValue', 'NewValue', 'updatetype', 'appname', 'Notification_ID', 'Notification_pref_ID'];
+}

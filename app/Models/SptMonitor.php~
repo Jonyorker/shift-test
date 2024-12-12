@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property string $lastrun
+ * @property integer $cpu_busy
+ * @property integer $io_busy
+ * @property integer $idle
+ * @property integer $pack_received
+ * @property integer $pack_sent
+ * @property integer $connections
+ * @property integer $pack_errors
+ * @property integer $total_read
+ * @property integer $total_write
+ * @property integer $total_errors
+ */
+class SptMonitor extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['lastrun', 'cpu_busy', 'io_busy', 'idle', 'pack_received', 'pack_sent', 'connections', 'pack_errors', 'total_read', 'total_write', 'total_errors'];
+}

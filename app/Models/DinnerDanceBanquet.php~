@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $created_date
+ * @property string $terminal
+ * @property string $ip_address
+ * @property string $event_year
+ * @property string $dietary_restriction
+ * @property string $dietary_other
+ * @property integer $plus_one
+ * @property string $guest_name
+ * @property string $dietary_restriction_guest
+ * @property string $dietary_other_guest
+ * @property integer $is_cancelled
+ * @property string $phone_number
+ * @property string $modified_date
+ * @property string $modified_by
+ * @property integer $rating
+ */
+class DinnerDanceBanquet extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'created_date', 'terminal', 'ip_address', 'event_year', 'dietary_restriction', 'dietary_other', 'plus_one', 'guest_name', 'dietary_restriction_guest', 'dietary_other_guest', 'is_cancelled', 'phone_number', 'modified_date', 'modified_by', 'rating'];
+}

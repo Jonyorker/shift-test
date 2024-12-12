@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $title
+ * @property string $description
+ * @property string $modified_date
+ * @property string $emp_id
+ * @property integer $is_active
+ * @property integer $cms_driving_positions_id
+ * @property string $start_date
+ * @property string $end_date
+ * @property integer $is_internal_only
+ * @property integer $highlight_job
+ * @property integer $email_notification
+ */
+class CmsDrivingPostings extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'title', 'description', 'modified_date', 'emp_id', 'is_active', 'cms_driving_positions_id', 'start_date', 'end_date', 'is_internal_only', 'highlight_job', 'email_notification'];
+}

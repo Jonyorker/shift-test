@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $incident_reports_id
+ * @property string $emp_id
+ * @property string $comment
+ * @property string $rejected_date
+ * @property string $ip_address
+ * @property integer $is_supervisor
+ */
+class IncidentReportsRejected extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'incident_reports_id', 'emp_id', 'comment', 'rejected_date', 'ip_address', 'is_supervisor'];
+}

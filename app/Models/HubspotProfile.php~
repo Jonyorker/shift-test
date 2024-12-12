@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $hupspot_id
+ * @property string $last_modified
+ * @property string $created_date
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $email
+ * @property string $phone_number
+ * @property string $life_cycle_stage
+ * @property string $employee_id
+ */
+class HubspotProfile extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'hupspot_id', 'last_modified', 'created_date', 'first_name', 'last_name', 'email', 'phone_number', 'life_cycle_stage', 'employee_id'];
+}

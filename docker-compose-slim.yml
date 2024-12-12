@@ -1,0 +1,114 @@
+name: laravel_stack_slim
+
+services:
+###  Kinda works, but forces the app to only access the docker DB's not ideal for our current environemnt
+    shed:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build:
+            context: .
+            dockerfile: ./docker/php-8.1-fpm/Dockerfile
+        container_name: shed
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: app
+            SERVICE_TAGS: dev
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
+            - ./docker/php-8.1-fpm/local.ini:/usr/local/etc/php/conf.d/local.ini
+#        network_mode: host
+        ports:
+            - "127.0.0.1:9001:9000"
+        depends_on:
+            - monitoring-db-slim
+            - sqlsrv-db-slim
+        networks:
+            - app
+    webserver:
+        image: nginx:alpine
+        container_name: webserver
+        restart: unless-stopped
+        tty: true
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx/:/etc/nginx/conf.d/
+        ports:
+            - "81:80"
+            - "443:443"
+        networks:
+            - app
+        depends_on:
+            - shed
+#    redis:
+#        image: redis:7.2.5-alpine
+#        restart: always
+#        container_name: redis
+#        ports:
+#            - '${REDIS_PORT}:6379'
+#        command: redis-server --save 20 1 --loglevel warning --requirepass '${REDIS_PASSWORD}'
+#        volumes:
+#            - redis-cache:/data
+#        networks:
+#            - app
+#    redis-insight:
+#        image: redis/redisinsight:latest
+#        restart: always
+#        container_name: redis-insight
+#        ports:
+#            - "5540:5540"
+#        volumes:
+#            - redis-insight:/data
+#        networks:
+#            - app
+#        depends_on:
+#            - redis
+#    rabbitmq:
+#        image: rabbitmq:3.9.29-management-alpine
+#        ports:
+#            - "${RABBITMQ_PORT}:5672"
+#            - "${RABBITMQ_MANAGEMENT_PORT}:15672"
+#        volumes:
+#            - rabbitmq_data:/data
+#        networks:
+#            - app
+#        depends_on:
+#            - monitoring-db
+    monitoring-db-slim:
+        container_name: monitoring-db-slim
+        image: 'timescale/timescaledb:latest-pg16'
+        ports:
+            - '${FORWARD_DB_PORT:-5432}:5432'
+        environment:
+            PGPASSWORD: '${MONITORING_DB_PASSWORD:-secret}'
+            POSTGRES_DB: '${MONITORING_DB_DATABASE}'
+            POSTGRES_USER: '${MONITORING_DB_USERNAME}'
+            POSTGRES_PASSWORD: '${MONITORING_DB_PASSWORD:-secret}'
+        volumes:
+            - 'monitoring-db-volume-slim:/var/lib/postgresql/data'
+            - './docker/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
+        networks:
+            - app
+    sqlsrv-db-slim:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/sqlsrv-slim
+        container_name: sqlsrv-db-slim
+        environment:
+            SA_PASSWORD: '${BISONWEB_DB_PASSWORD}'
+        ports:
+            - '${BISONWEB_DB_PORT}:1433'
+        volumes:
+            - sqlsrv-db-volume-slim:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+networks:
+    app:
+        driver: bridge
+volumes:
+    monitoring-db-volume-slim:
+    sqlsrv-db-volume-slim:
+#    redis-cache:
+#    redis-insight:
+#    rabbitmq_data:
+

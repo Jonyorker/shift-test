@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $exp_code
+ * @property integer $number_of_days
+ */
+class ExpirationNotify extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'exp_code', 'number_of_days'];
+}

@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $review_type
+ * @property integer $review_year
+ * @property string $file_mime
+ * @property integer $file_size
+ * @property string $save_user
+ * @property string $save_date
+ * @property string $save_notes
+ * @property string $file_hash
+ * @property string $file_ext
+ * @property integer $is_skipped
+ */
+class IntraPerformanceReviews extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'review_type', 'review_year', 'file_mime', 'file_size', 'save_user', 'save_date', 'save_notes', 'file_hash', 'file_ext', 'is_skipped'];
+}

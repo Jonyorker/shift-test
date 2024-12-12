@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property string $domain_account
+ * @property string $full_name
+ * @property string $first_name
+ * @property string $last_name
+ */
+class WindowDomainUsers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['domain_account', 'full_name', 'first_name', 'last_name'];
+}

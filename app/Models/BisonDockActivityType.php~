@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $activity_code
+ * @property string $activity_label
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $updated_date
+ * @property string $updated_by
+ */
+class BisonDockActivityType extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['activity_code', 'activity_label', 'created_date', 'created_by', 'updated_date', 'updated_by'];
+}

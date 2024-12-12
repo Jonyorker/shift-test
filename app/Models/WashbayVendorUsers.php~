@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $vendor
+ * @property string $terminal
+ * @property string $password
+ * @property string $last_login
+ * @property string $description
+ * @property integer $is_show
+ */
+class WashbayVendorUsers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'vendor', 'terminal', 'password', 'last_login', 'description', 'is_show'];
+}

@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $huddle_project_id
+ * @property integer $huddle_resource_category_id
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $description
+ * @property integer $parent_id
+ * @property integer $version_number
+ * @property integer $is_active
+ * @property integer $huddle_project_resource_category_id
+ */
+class HuddleIssue extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'huddle_project_id', 'huddle_resource_category_id', 'created_date', 'created_by', 'description', 'parent_id', 'version_number', 'is_active', 'huddle_project_resource_category_id'];
+}

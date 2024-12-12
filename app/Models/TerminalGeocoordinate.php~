@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $terminal
+ * @property string $code
+ * @property float $latitude
+ * @property float $longitude
+ * @property float $radius_in_miles
+ */
+class TerminalGeocoordinate extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'terminal', 'code', 'latitude', 'longitude', 'radius_in_miles'];
+}

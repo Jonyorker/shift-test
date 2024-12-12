@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $start_date
+ * @property string $end_date
+ * @property integer $target
+ */
+class EquipmentTrackTargetUnproductiveDays extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'start_date', 'end_date', 'target'];
+}

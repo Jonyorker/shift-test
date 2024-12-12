@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $type1
+ * @property string $lh_sh_city
+ * @property string $ngt_day_expe
+ * @property string $dfp_vet_ici
+ * @property string $tp_sg
+ */
+class ScorecardUtilizationDriverTypes extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'type1', 'lh_sh_city', 'ngt_day_expe', 'dfp_vet_ici', 'tp_sg'];
+}

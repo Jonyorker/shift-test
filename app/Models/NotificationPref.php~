@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $notification_user_id
+ * @property integer $notification_script_id
+ * @property string $mins
+ * @property string $hours
+ * @property string $dow
+ * @property string $dom
+ * @property string $month
+ * @property integer $is_single
+ * @property integer $is_active
+ */
+class NotificationPref extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'notification_user_id', 'notification_script_id', 'mins', 'hours', 'dow', 'dom', 'month', 'is_single', 'is_active'];
+}

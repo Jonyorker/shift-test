@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $form_id
+ * @property integer $element_id
+ * @property string $start_date
+ * @property string $end_date
+ */
+class FormElements extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'form_id', 'element_id', 'start_date', 'end_date'];
+}

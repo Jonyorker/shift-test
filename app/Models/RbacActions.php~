@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $rbac_controllers_id
+ * @property string $label
+ * @property string $action
+ * @property string $type
+ * @property integer $parent_id
+ * @property integer $child_id
+ * @property integer $is_active
+ * @property integer $is_development
+ * @property integer $is_certification
+ * @property integer $is_production
+ */
+class RbacActions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'rbac_controllers_id', 'label', 'action', 'type', 'parent_id', 'child_id', 'is_active', 'is_development', 'is_certification', 'is_production'];
+}

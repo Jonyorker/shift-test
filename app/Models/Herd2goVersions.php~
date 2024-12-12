@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $version
+ * @property integer $build
+ * @property string $release_date
+ * @property string $expiry_date
+ * @property string $release_notes
+ */
+class Herd2goVersions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'version', 'build', 'release_date', 'expiry_date', 'release_notes'];
+}

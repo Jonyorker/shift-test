@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $huddle_project_id
+ * @property integer $huddle_resource_category_id
+ * @property integer $sort_order
+ */
+class HuddleProjectResourceCategory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'huddle_project_id', 'huddle_resource_category_id', 'sort_order'];
+}

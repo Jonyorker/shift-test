@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $created_date
+ * @property float $daily_count
+ * @property float $monthly_average
+ */
+class EquipmentTrackAverageRentalTrailers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'created_date', 'daily_count', 'monthly_average'];
+}

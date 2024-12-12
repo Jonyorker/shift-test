@@ -1,0 +1,147 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::connection('psbison')->create('bisonkpi_facts', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('typ', 3)->nullable();
+            $table->dateTime('lgh_startdate')->nullable();
+            $table->integer('ldmiles')->nullable();
+            $table->integer('mtmiles')->nullable();
+            $table->integer('carriermiles')->nullable();
+            $table->integer('reefermiles')->nullable();
+            $table->integer('turnpikemiles')->nullable();
+            $table->float('revenue', 53, 0)->nullable();
+            $table->integer('numtrips')->nullable();
+            $table->integer('numorders')->nullable();
+            $table->integer('numtrucks')->nullable();
+            $table->integer('numtrailers')->nullable();
+            $table->integer('numunassigned')->nullable();
+            $table->integer('numactivecomp')->nullable();
+            $table->integer('numactiveoo')->nullable();
+            $table->integer('budget_miles')->nullable();
+            $table->integer('budget_trucks')->nullable();
+            $table->decimal('budget_rpm', 19, 4)->nullable();
+            $table->float('ablrevenue', 53, 0)->nullable();
+            $table->decimal('loads_bison', 19, 4)->nullable();
+            $table->decimal('loads_abl', 19, 4)->nullable();
+            $table->float('reeftrlrev', 53, 0)->nullable();
+            $table->integer('reeftrlld')->nullable();
+            $table->integer('reeftrlmt')->nullable();
+            $table->float('reefrev', 53, 0)->nullable();
+            $table->integer('reefld')->nullable();
+            $table->integer('reefmt')->nullable();
+            $table->integer('reefavgtriplen')->nullable();
+            $table->float('reeflogirev', 53, 0)->nullable();
+            $table->integer('reeftrlcount')->nullable();
+            $table->integer('reeftripcount')->nullable();
+            $table->integer('compmiles')->nullable();
+            $table->float('fuelcomplitres', 53, 0)->nullable();
+            $table->float('fscrev', 53, 0)->nullable();
+            $table->float('fuelsubsidy', 53, 0)->nullable();
+            $table->float('fuelcompcost', 53, 0)->nullable();
+            $table->integer('delvSCM')->nullable();
+            $table->integer('delvABL')->nullable();
+            $table->integer('delvLUL')->nullable();
+            $table->integer('delvDRL')->nullable();
+            $table->integer('podreqd')->nullable();
+            $table->decimal('pod0to15', 19, 4)->nullable();
+            $table->decimal('pod16to30', 19, 4)->nullable();
+            $table->decimal('pod31plus', 19, 4)->nullable();
+            $table->integer('pod0to15_cnt')->nullable();
+            $table->integer('pod16to30_cnt')->nullable();
+            $table->integer('pod31plus_cnt')->nullable();
+            $table->integer('legmiles')->nullable();
+            $table->integer('reef_drvmiles')->nullable();
+            $table->integer('reef_drvtrlmiles')->nullable();
+            $table->decimal('acct_rev', 19, 4)->nullable();
+            $table->integer('acct_miles')->nullable();
+            $table->integer('acct_miles_oo')->nullable();
+            $table->integer('hwyootrucks')->nullable();
+            $table->integer('hwycotrucks')->nullable();
+            $table->integer('pikeootrucks')->nullable();
+            $table->integer('pikecotrucks')->nullable();
+            $table->integer('intraootrucks')->nullable();
+            $table->integer('intracotrucks')->nullable();
+            $table->integer('citytrucks')->nullable();
+            $table->integer('x01ootrucks')->nullable();
+            $table->integer('x01cotrucks')->nullable();
+            $table->integer('r1ootrucks')->nullable();
+            $table->integer('r1cotrucks')->nullable();
+            $table->integer('r2ootrucks')->nullable();
+            $table->integer('r2cotrucks')->nullable();
+            $table->integer('c01ootrucks')->nullable();
+            $table->integer('c01cotrucks')->nullable();
+            $table->integer('c02ootrucks')->nullable();
+            $table->integer('c02cotrucks')->nullable();
+            $table->integer('c03ootrucks')->nullable();
+            $table->integer('c03cotrucks')->nullable();
+            $table->integer('c04ootrucks')->nullable();
+            $table->integer('c04cotrucks')->nullable();
+            $table->integer('c05ootrucks')->nullable();
+            $table->integer('c05cotrucks')->nullable();
+            $table->integer('c06ootrucks')->nullable();
+            $table->integer('c06cotrucks')->nullable();
+            $table->integer('c07ootrucks')->nullable();
+            $table->integer('c07cotrucks')->nullable();
+            $table->integer('w01ootrucks')->nullable();
+            $table->integer('w01cotrucks')->nullable();
+            $table->integer('w02cotrucks')->nullable();
+            $table->integer('w02ootrucks')->nullable();
+            $table->integer('w03ootrucks')->nullable();
+            $table->integer('w03cotrucks')->nullable();
+            $table->integer('e01ootrucks')->nullable();
+            $table->integer('e01cotrucks')->nullable();
+            $table->integer('e02ootrucks')->nullable();
+            $table->integer('e02cotrucks')->nullable();
+            $table->integer('e03ootrucks')->nullable();
+            $table->integer('e03cotrucks')->nullable();
+            $table->integer('z01ootrucks')->nullable();
+            $table->integer('z01cotrucks')->nullable();
+            $table->integer('acct_miles_hwyoo')->nullable();
+            $table->integer('acct_miles_hwyco')->nullable();
+            $table->integer('acct_miles_pikeoo')->nullable();
+            $table->integer('acct_miles_pikeco')->nullable();
+            $table->integer('acct_miles_intraoo')->nullable();
+            $table->integer('acct_miles_intraco')->nullable();
+            $table->integer('acct_miles_city')->nullable();
+            $table->decimal('budget_intermodal', 19, 4)->nullable();
+            $table->decimal('budget_logistics', 19, 4)->nullable();
+            $table->integer('intermodalmiles')->nullable();
+            $table->float('intermodalrev', 53, 0)->nullable();
+            $table->decimal('estunrated', 19, 4)->nullable();
+            $table->decimal('estunratedabl', 19, 4)->nullable();
+            $table->float('reefrevheat', 53, 0)->nullable();
+            $table->integer('reefldheat')->nullable();
+            $table->integer('reefmtheat')->nullable();
+            $table->float('reefrevdry', 53, 0)->nullable();
+            $table->integer('reeflddry')->nullable();
+            $table->integer('reefmtdry')->nullable();
+            $table->integer('legmiles_lcv')->nullable();
+            $table->integer('legmiles_team')->nullable();
+            $table->integer('budget_lcvmiles')->nullable();
+            $table->integer('warr_zero')->nullable();
+            $table->integer('warr_full')->nullable();
+            $table->integer('warr_extv')->nullable();
+            $table->integer('warr_extf')->nullable();
+            $table->integer('warr_trccount')->nullable();
+            $table->integer('acct_miles_cityoo')->nullable();
+            $table->integer('acct_miles_cityco')->nullable();
+            $table->integer('budget_miles_cityco')->nullable();
+            $table->integer('budget_miles_cityoo')->nullable();
+            $table->integer('budget_trucks_cityco')->nullable();
+            $table->integer('budget_trucks_cityoo')->nullable();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::connection('psbison')->dropIfExists('bisonkpi_facts');
+    }
+};

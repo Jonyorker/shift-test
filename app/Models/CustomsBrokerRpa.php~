@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $mov_number
+ * @property integer $ord_hdrnumber
+ * @property string $direction
+ * @property string $ord_billto
+ * @property string $ace_status
+ * @property string $lgh_driver
+ * @property string $trailer_id
+ * @property string $lgh_tractor
+ * @property string $ord_shipper
+ * @property integer $stp_number
+ * @property string $stp_status
+ * @property string $stp_comment
+ * @property string $stp_arrivaldate
+ * @property float $pcs
+ * @property float $weight
+ * @property string $commodity
+ * @property string $cmp_id
+ * @property string $created_by
+ * @property string $created_date
+ * @property string $updated_by
+ * @property string $updated_date
+ * @property string $processed_by
+ * @property string $processed_date
+ * @property integer $customs_broker_package_id
+ * @property integer $fgt_number
+ * @property integer $fgt_stp_number
+ */
+class CustomsBrokerRpa extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'mov_number', 'ord_hdrnumber', 'direction', 'ord_billto', 'ace_status', 'lgh_driver', 'trailer_id', 'lgh_tractor', 'ord_shipper', 'stp_number', 'stp_status', 'stp_comment', 'stp_arrivaldate', 'pcs', 'weight', 'commodity', 'cmp_id', 'created_by', 'created_date', 'updated_by', 'updated_date', 'processed_by', 'processed_date', 'customs_broker_package_id', 'fgt_number', 'fgt_stp_number'];
+}

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1733515984">
+  <project timestamp="1733515984">
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Exceptions/Handler.php">
+      <class name="App\Exceptions\Handler" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+      </class>
+      <line num="24" type="method" name="register" visibility="public" complexity="1" crap="1" count="34"/>
+      <line num="26" type="stmt" count="34"/>
+      <line num="28" type="stmt" count="34"/>
+      <metrics loc="31" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Helpers/sEcho.php">
+      <line num="7" type="stmt" count="0"/>
+      <line num="8" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <metrics loc="15" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="5" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Jobs/TestConsume.php">
+      <class name="App\Jobs\TestConsume" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      </class>
+      <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="31" type="method" name="handle" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="39" ncloc="31" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Jobs/TestSend.php">
+      <class name="App\Jobs\TestSend" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="28" type="method" name="handle" visibility="public" complexity="1" crap="1" count="1"/>
+      <metrics loc="30" ncloc="24" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Mail/PlatSci_Departed.php">
+      <class name="App\Mail\PlatSci_Departed" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
+      </class>
+      <line num="20" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="22" type="stmt" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="25" type="stmt" count="2"/>
+      <line num="26" type="stmt" count="2"/>
+      <line num="32" type="method" name="envelope" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="42" type="method" name="content" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="56" type="method" name="attachments" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="58" type="stmt" count="1"/>
+      <metrics loc="61" ncloc="50" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bison/EmailNotify.php">
+      <class name="App\Models\bison\EmailNotify" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="37" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bison/FuelDriverCards.php">
+      <class name="App\Models\bison\FuelDriverCards" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="62" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bison/MailRecipients.php">
+      <class name="App\Models\bison\MailRecipients" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="35" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bison/PlatSciAutoprocess.php">
+      <class name="App\Models\bison\PlatSciAutoprocess" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="49" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/EmployeeList.php">
+      <class name="App\Models\bisonweb\EmployeeList" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="73" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/FormstackRateMyTripView.php">
+      <class name="App\Models\bisonweb\FormstackRateMyTripView" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="46" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/RbacUsers.php">
+      <class name="App\Models\bisonweb\RbacUsers" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="57" type="method" name="userList" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="59" type="stmt" count="0"/>
+      <metrics loc="65" ncloc="32" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/UserList.php">
+      <class name="App\Models\bisonweb\UserList" namespace="global">
+        <metrics complexity="5" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+      </class>
+      <line num="52" type="method" name="userListAddress" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="60" type="method" name="userListCompany" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="62" type="stmt" count="0"/>
+      <line num="68" type="method" name="userListContact" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="76" type="method" name="rbacUsers" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="78" type="stmt" count="0"/>
+      <line num="82" type="method" name="getUsername" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="84" type="stmt" count="0"/>
+      <metrics loc="87" ncloc="50" classes="1" methods="5" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="10" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/UserListAddress.php">
+      <class name="App\Models\bisonweb\UserListAddress" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="54" type="method" name="userList" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="56" type="stmt" count="0"/>
+      <metrics loc="61" ncloc="30" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/UserListCompany.php">
+      <class name="App\Models\bisonweb\UserListCompany" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="49" type="method" name="userList" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <metrics loc="54" ncloc="29" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/UserListContact.php">
+      <class name="App\Models\bisonweb\UserListContact" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="51" type="method" name="userList" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="59" type="method" name="userListContactType" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="61" type="stmt" count="0"/>
+      <metrics loc="64" ncloc="35" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/bisonweb/UserListContactType.php">
+      <class name="App\Models\bisonweb\UserListContactType" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="37" type="method" name="userListContact" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <metrics loc="42" ncloc="22" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/BisonAuCplocations.php">
+      <class name="App\Models\psbison\BisonAuCplocations" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="27" ncloc="18" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/BisonRepTrailerLocations.php">
+      <class name="App\Models\psbison\BisonRepTrailerLocations" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="30" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/BisonWeightUpdates.php">
+      <class name="App\Models\psbison\BisonWeightUpdates" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="39" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/City.php">
+      <class name="App\Models\psbison\City" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="101" ncloc="28" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/Event.php">
+      <class name="App\Models\psbison\Event" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="95" type="method" name="manPowerProfile1" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="97" type="stmt" count="0"/>
+      <line num="103" type="method" name="manPowerProfile2" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="105" type="stmt" count="0"/>
+      <metrics loc="108" ncloc="34" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/Freightdetail.php">
+      <class name="App\Models\psbison\Freightdetail" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="154" ncloc="15" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/LegHeader.php">
+      <class name="App\Models\psbison\LegHeader" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="6" coveredelements="6"/>
+      </class>
+      <line num="334" type="method" name="stops" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="336" type="stmt" count="2"/>
+      <line num="342" type="method" name="manPowerProfile1" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="344" type="stmt" count="1"/>
+      <line num="350" type="method" name="manPowerProfile2" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="352" type="stmt" count="1"/>
+      <metrics loc="355" ncloc="44" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="6" coveredelements="6"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/ManpowerProfile.php">
+      <class name="App\Models\psbison\ManpowerProfile" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      </class>
+      <line num="305" type="method" name="legHeaders" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="307" type="stmt" count="0"/>
+      <line num="308" type="stmt" count="0"/>
+      <line num="315" type="method" name="events" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="317" type="stmt" count="0"/>
+      <line num="318" type="stmt" count="0"/>
+      <metrics loc="322" ncloc="38" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/ReferenceNumber.php">
+      <class name="App\Models\psbison\ReferenceNumber" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="49" ncloc="17" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/Stops.php">
+      <class name="App\Models\psbison\Stops" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="1" elements="6" coveredelements="2"/>
+      </class>
+      <line num="214" type="method" name="stopsAutoActualizationByTime" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="216" type="stmt" count="0"/>
+      <line num="222" type="method" name="event" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="224" type="stmt" count="1"/>
+      <line num="233" type="method" name="getStatusByStopNumbers" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="236" type="stmt" count="0"/>
+      <metrics loc="239" ncloc="42" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="1" elements="6" coveredelements="2"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/TractorProfile.php">
+      <class name="App\Models\psbison\TractorProfile" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="277" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/psbison/TrailerProfile.php">
+      <class name="App\Models\psbison\TrailerProfile" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="263" ncloc="22" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/sqlweb/datawarehouse/StopsAutoActualizationByTime.php">
+      <class name="App\Models\sqlweb\datawarehouse\StopsAutoActualizationByTime" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      </class>
+      <line num="46" type="method" name="getRecords" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <metrics loc="55" ncloc="31" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Models/tranzactor/Transaction.php">
+      <class name="App\Models\tranzactor\Transaction" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+      </class>
+      <line num="65" type="method" name="batch_process" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="67" type="stmt" count="1"/>
+      <line num="68" type="stmt" count="1"/>
+      <line num="69" type="stmt" count="1"/>
+      <line num="70" type="stmt" count="1"/>
+      <line num="71" type="stmt" count="1"/>
+      <metrics loc="74" ncloc="33" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Rules/Boolean.php">
+      <class name="App\Rules\Boolean" namespace="global">
+        <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="4" coveredelements="2"/>
+      </class>
+      <line num="15" type="method" name="validate" visibility="public" complexity="2" crap="2.15" count="10"/>
+      <line num="17" type="stmt" count="10"/>
+      <line num="18" type="stmt" count="10"/>
+      <line num="19" type="stmt" count="0"/>
+      <metrics loc="23" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="4" coveredelements="2"/>
+    </file>
+    <file name="/Volumes/Storage/BisonTransport/sched.bisontransport.laravel/app/Services/SimpleHasher.php">
+      <class name="App\Services\SimpleHasher" namespace="global">
+        <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="13" coveredelements="13"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="18" type="stmt" count="4"/>
+      <line num="19" type="stmt" count="4"/>
+      <line num="20" type="stmt" count="4"/>
+      <line num="21" type="stmt" count="4"/>
+      <line num="27" type="method" name="make" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <line num="35" type="method" name="decrypt" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="43" type="method" name="check" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <line num="51" type="method" name="needsRehash" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <metrics loc="57" ncloc="44" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="13" coveredelements="13"/>
+    </file>
+    <metrics files="33" loc="3024" ncloc="893" classes="18" methods="38" coveredmethods="18" conditionals="0" coveredconditionals="0" statements="69" coveredstatements="40" elements="107" coveredelements="58"/>
+  </project>
+</coverage>

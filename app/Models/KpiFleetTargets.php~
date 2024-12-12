@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $effective_date
+ * @property string $type
+ * @property string $label
+ * @property float $value
+ * @property string $emp_id
+ */
+class KpiFleetTargets extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'effective_date', 'type', 'label', 'value', 'emp_id'];
+}

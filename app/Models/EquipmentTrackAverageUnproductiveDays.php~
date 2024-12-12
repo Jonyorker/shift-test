@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $created_date
+ * @property integer $unproductive_days
+ * @property integer $grand_total_of_loads
+ * @property float $overall_average_of_unproductive_days
+ */
+class EquipmentTrackAverageUnproductiveDays extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'created_date', 'unproductive_days', 'grand_total_of_loads', 'overall_average_of_unproductive_days'];
+}

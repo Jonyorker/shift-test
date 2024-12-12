@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $yard_management_id
+ * @property string $unit_number
+ * @property string $unit_type
+ */
+class YardManagementLogEquipment extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'yard_management_id', 'unit_number', 'unit_type'];
+}

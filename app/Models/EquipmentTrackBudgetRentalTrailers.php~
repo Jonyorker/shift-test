@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $created_date
+ * @property integer $monthly_budget
+ * @property string $monthly_date
+ * @property string $created_by
+ * @property string $updated_by
+ * @property string $updated_date
+ */
+class EquipmentTrackBudgetRentalTrailers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'created_date', 'monthly_budget', 'monthly_date', 'created_by', 'updated_by', 'updated_date'];
+}

@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $cartage_user_id
+ * @property string $carrier_id
+ * @property string $stop_number
+ * @property string $latitude
+ * @property string $longitude
+ * @property string $event_time_cst
+ * @property string $event_time
+ * @property string $type
+ * @property string $created_date
+ * @property string $modified_date
+ * @property string $error_message
+ * @property integer $processed
+ * @property string $modified_by
+ * @property integer $is_delete
+ * @property string $created_by
+ */
+class CartageStopUpdateNew extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'cartage_user_id', 'carrier_id', 'stop_number', 'latitude', 'longitude', 'event_time_cst', 'event_time', 'type', 'created_date', 'modified_date', 'error_message', 'processed', 'modified_by', 'is_delete', 'created_by'];
+}

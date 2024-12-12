@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $probation_late
+ * @property string $interim_late
+ * @property string $annual_late
+ * @property string $idp_late
+ * @property string $idp_interim_late
+ * @property string $interim_next
+ * @property string $annual_next
+ * @property string $idp_next
+ * @property string $idp_interim_next
+ * @property string $probation_next
+ */
+class EmployeePerformanceReviewDates extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'probation_late', 'interim_late', 'annual_late', 'idp_late', 'idp_interim_late', 'interim_next', 'annual_next', 'idp_next', 'idp_interim_next', 'probation_next'];
+}

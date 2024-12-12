@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $reason
+ * @property boolean $is_active
+ * @property boolean $is_visible
+ */
+class EfsResourcesRejectedReasons extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'reason', 'is_active', 'is_visible'];
+}

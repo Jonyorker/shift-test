@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $cms_driving_postings_id
+ * @property integer $cms_driving_labels_id
+ */
+class CmsDrivingPostingsLabel extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'cms_driving_postings_id', 'cms_driving_labels_id'];
+}

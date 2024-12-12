@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $queue_label
+ * @property string $start_time
+ * @property string $end_time
+ * @property string $day_of_the_week
+ * @property boolean $is_active
+ * @property string $code
+ * @property integer $order
+ * @property integer $filter_by_fleet
+ */
+class ChatQueues extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'queue_label', 'start_time', 'end_time', 'day_of_the_week', 'is_active', 'code', 'order', 'filter_by_fleet'];
+}

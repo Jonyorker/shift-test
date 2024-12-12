@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $washbay_log_id
+ * @property integer $washbay_resource_priority_id
+ */
+class WashbayPriorities extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'washbay_log_id', 'washbay_resource_priority_id'];
+}

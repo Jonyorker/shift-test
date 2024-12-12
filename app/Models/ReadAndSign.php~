@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $title
+ * @property string $content
+ * @property string $start_date
+ * @property string $end_date
+ * @property integer $read_and_sign_template_id
+ * @property float $version
+ * @property string $created_date
+ * @property string $emp_id
+ * @property integer $parent_id
+ * @property integer $visibility_id
+ */
+class ReadAndSign extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'title', 'content', 'start_date', 'end_date', 'read_and_sign_template_id', 'version', 'created_date', 'emp_id', 'parent_id', 'visibility_id'];
+}

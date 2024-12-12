@@ -1,0 +1,63 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $is_test
+ * @property integer $efs_card_id
+ * @property string $created_date
+ * @property string $fleet
+ * @property integer $efs_resources_category_id
+ * @property string $gl_code
+ * @property string $expense_date
+ * @property integer $efs_resources_expense_type_id
+ * @property integer $mov_number
+ * @property string $po_number
+ * @property integer $request_express_code
+ * @property string $vendor_name
+ * @property string $image_uploader_family_uid
+ * @property integer $request_type
+ * @property string $requested_by
+ * @property string $requested_date
+ * @property float $requested_amount
+ * @property string $requested_amount_unit
+ * @property integer $requested_status
+ * @property string $approved_by
+ * @property string $approved_date
+ * @property float $approved_amount
+ * @property string $approved_amount_unit
+ * @property float $approved_gst
+ * @property integer $approved_status
+ * @property float $exchange_rate
+ * @property float $efs_amount
+ * @property string $efs_reference_number
+ * @property string $efs_money_code
+ * @property integer $efs_processed
+ * @property string $efs_processed_date
+ * @property string $efs_processed_error
+ * @property boolean $void_status
+ * @property string $void_date
+ * @property string $voided_by
+ * @property integer $order_number
+ * @property string $invoice_number
+ * @property string $private_comments
+ * @property string $bison_po_number
+ * @property integer $efs_resources_rejected_reasons_id
+ * @property string $request_uuid
+ * @property boolean $is_hidden
+ * @property boolean $reimburse_type
+ * @property integer $stp_number
+ * @property integer $cr_num
+ * @property string $driver_comment
+ * @property string $operations_notes
+ */
+class EfsExpenses extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'is_test', 'efs_card_id', 'created_date', 'fleet', 'efs_resources_category_id', 'gl_code', 'expense_date', 'efs_resources_expense_type_id', 'mov_number', 'po_number', 'request_express_code', 'vendor_name', 'image_uploader_family_uid', 'request_type', 'requested_by', 'requested_date', 'requested_amount', 'requested_amount_unit', 'requested_status', 'approved_by', 'approved_date', 'approved_amount', 'approved_amount_unit', 'approved_gst', 'approved_status', 'exchange_rate', 'efs_amount', 'efs_reference_number', 'efs_money_code', 'efs_processed', 'efs_processed_date', 'efs_processed_error', 'void_status', 'void_date', 'voided_by', 'order_number', 'invoice_number', 'private_comments', 'bison_po_number', 'efs_resources_rejected_reasons_id', 'request_uuid', 'is_hidden', 'reimburse_type', 'stp_number', 'cr_num', 'driver_comment', 'operations_notes'];
+}

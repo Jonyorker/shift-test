@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $created_date
+ * @property string $ip_address
+ * @property string $employee_id
+ * @property integer $have_travelled_to
+ * @property integer $traveller_close_contact
+ * @property integer $has_symptoms
+ * @property integer $travelled_oversea
+ * @property integer $travelled_usa
+ */
+class FormCovid19 extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'created_date', 'ip_address', 'employee_id', 'have_travelled_to', 'traveller_close_contact', 'has_symptoms', 'travelled_oversea', 'travelled_usa'];
+}

@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $employee_id
+ * @property integer $suppliers_maintenance_role_id
+ * @property integer $is_active
+ * @property string $created_date
+ * @property string $modified_date
+ */
+class SuppliersMaintenanceUserRoles extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'employee_id', 'suppliers_maintenance_role_id', 'is_active', 'created_date', 'modified_date'];
+}

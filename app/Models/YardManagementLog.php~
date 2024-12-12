@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $date_created
+ * @property integer $yard_management_resource_yard_location_id
+ * @property string $equipement_information
+ * @property string $emp_id
+ * @property integer $is_team_work
+ * @property string $team_emp_id
+ * @property string $comment
+ * @property string $shunt_number
+ * @property integer $from_location_id
+ * @property integer $to_location_id
+ * @property string $quick_check
+ * @property float $fuel_litres
+ * @property integer $edvir_data_id
+ * @property string $tmt_import_uuid
+ * @property integer $out_of_service
+ */
+class YardManagementLog extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'date_created', 'yard_management_resource_yard_location_id', 'equipement_information', 'emp_id', 'is_team_work', 'team_emp_id', 'comment', 'shunt_number', 'from_location_id', 'to_location_id', 'quick_check', 'fuel_litres', 'edvir_data_id', 'tmt_import_uuid', 'out_of_service'];
+}

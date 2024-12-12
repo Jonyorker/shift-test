@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $thread_id
+ * @property integer $message_id
+ * @property integer $user_id
+ * @property string $read_datetime
+ */
+class ChatIsRead extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'thread_id', 'message_id', 'user_id', 'read_datetime'];
+}

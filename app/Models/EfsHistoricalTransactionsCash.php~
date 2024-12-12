@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $added_date
+ * @property integer $efs_card_id
+ * @property float $amount
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $cash_id
+ * @property string $cash_label
+ * @property string $reference_number
+ * @property integer $transaction_id
+ */
+class EfsHistoricalTransactionsCash extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'added_date', 'efs_card_id', 'amount', 'created_date', 'created_by', 'cash_id', 'cash_label', 'reference_number', 'transaction_id'];
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $image_id
+ * @property integer $family_id
+ * @property string $status
+ * @property integer $page_number
+ * @property integer $rotation_degree
+ * @property integer $imagelookup_id
+ * @property integer $rejected_reason_id
+ */
+class ImageUploaderFamilyMembers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'image_id', 'family_id', 'status', 'page_number', 'rotation_degree', 'imagelookup_id', 'rejected_reason_id'];
+}

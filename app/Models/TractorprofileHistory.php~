@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property string $snapshot_date
+ * @property string $trc_number
+ * @property string $trc_fleet
+ * @property string $trc_type1
+ * @property string $trc_type2
+ * @property string $trc_type3
+ * @property string $trc_type4
+ */
+class TractorprofileHistory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['snapshot_date', 'trc_number', 'trc_fleet', 'trc_type1', 'trc_type2', 'trc_type3', 'trc_type4'];
+}

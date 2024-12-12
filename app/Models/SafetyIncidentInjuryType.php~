@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $injury_type
+ */
+class SafetyIncidentInjuryType extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'injury_type'];
+}

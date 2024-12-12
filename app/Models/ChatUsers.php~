@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $thread_id
+ * @property string $emp_id
+ * @property string $start_datetime
+ * @property string $end_datetime
+ * @property integer $assigned
+ * @property string $user_type
+ * @property string $type
+ */
+class ChatUsers extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'thread_id', 'emp_id', 'start_datetime', 'end_datetime', 'assigned', 'user_type', 'type'];
+}

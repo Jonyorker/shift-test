@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $agent_id
+ * @property string $breaktimedetail
+ * @property string $ringtimedetail
+ * @property string $AvgwaitHHMMSS
+ * @property string $loggedinHHMMSS
+ * @property string $acdnacdtalktime
+ * @property string $NotReadyHHMMSS
+ * @property integer $CallsReturnedToQDueToTimeout
+ * @property integer $CallsReturnedToQ
+ * @property integer $ShortCallsAnswered
+ * @property string $walkawaytimedetail
+ * @property integer $CallsAnswered
+ * @property string $skillsettalktime
+ * @property string $dntimedetails
+ * @property integer $CallsOffered
+ * @property float $dnanswereddetails
+ * @property float $acdnacdansdetails
+ * @property float $confoutdetails
+ * @property float $transfoutdetails
+ * @property integer $NetworkCallsAnswered
+ * @property integer $ReservedForCall
+ * @property string $networktalktimedetail
+ * @property string $reservedtimedetail
+ * @property string $activity_date
+ */
+class PhoneReportStatsDetails extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'agent_id', 'breaktimedetail', 'ringtimedetail', 'AvgwaitHHMMSS', 'loggedinHHMMSS', 'acdnacdtalktime', 'NotReadyHHMMSS', 'CallsReturnedToQDueToTimeout', 'CallsReturnedToQ', 'ShortCallsAnswered', 'walkawaytimedetail', 'CallsAnswered', 'skillsettalktime', 'dntimedetails', 'CallsOffered', 'dnanswereddetails', 'acdnacdansdetails', 'confoutdetails', 'transfoutdetails', 'NetworkCallsAnswered', 'ReservedForCall', 'networktalktimedetail', 'reservedtimedetail', 'activity_date'];
+}

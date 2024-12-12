@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $worksheet
+ * @property string $order_num
+ * @property string $old_trailer_num
+ * @property string $arrival_time
+ * @property string $new_trailer_num
+ * @property string $comment
+ * @property string $departure_time
+ * @property string $new_seal_num
+ * @property integer $transfer_completed
+ * @property string $update_date
+ * @property string $update_userid
+ * @property string $carrier
+ * @property string $customer
+ * @property string $arrival_type
+ * @property string $terminal
+ * @property string $new_carrier
+ * @property string $shunt_code
+ * @property integer $priority
+ * @property string $created_by_userid
+ * @property string $created_on
+ * @property integer $space_remaining
+ * @property integer $is_active
+ * @property string $deactivated_by
+ * @property string $attachment_url
+ * @property integer $space_used
+ * @property string $activity_type
+ */
+class LoadTransferGrid extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'worksheet', 'order_num', 'old_trailer_num', 'arrival_time', 'new_trailer_num', 'comment', 'departure_time', 'new_seal_num', 'transfer_completed', 'update_date', 'update_userid', 'carrier', 'customer', 'arrival_type', 'terminal', 'new_carrier', 'shunt_code', 'priority', 'created_by_userid', 'created_on', 'space_remaining', 'is_active', 'deactivated_by', 'attachment_url', 'space_used', 'activity_type'];
+}

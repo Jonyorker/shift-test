@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $smarteru_lms_id
+ * @property string $group_id
+ * @property string $group_name
+ * @property integer $is_active
+ * @property string $created_date
+ * @property string $updated_date
+ */
+class UserListLmsGroups extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'smarteru_lms_id', 'group_id', 'group_name', 'is_active', 'created_date', 'updated_date'];
+}

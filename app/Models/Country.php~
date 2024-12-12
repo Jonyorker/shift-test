@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $iso
+ * @property string $name
+ * @property string $printable_name
+ * @property string $iso3
+ * @property integer $numcode
+ * @property integer $sort_order
+ */
+class Country extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'iso', 'name', 'printable_name', 'iso3', 'numcode', 'sort_order'];
+}

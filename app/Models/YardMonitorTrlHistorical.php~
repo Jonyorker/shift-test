@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $yard_monitor_id
+ * @property string $number
+ * @property string $type
+ * @property string $owner
+ * @property integer $is_primary
+ * @property string $added_date
+ */
+class YardMonitorTrlHistorical extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'yard_monitor_id', 'number', 'type', 'owner', 'is_primary', 'added_date'];
+}

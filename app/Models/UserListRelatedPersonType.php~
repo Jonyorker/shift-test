@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $user_list_related_person_id
+ * @property string $type
+ * @property integer $is_primary
+ * @property integer $is_active
+ * @property integer $priority
+ * @property string $created_date
+ * @property string $updated_date
+ * @property integer $user_list_related_person_contact_id
+ */
+class UserListRelatedPersonType extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'user_list_related_person_id', 'type', 'is_primary', 'is_active', 'priority', 'created_date', 'updated_date', 'user_list_related_person_contact_id'];
+}

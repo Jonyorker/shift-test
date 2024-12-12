@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $suppliers_id
+ * @property string $file_path
+ * @property integer $is_first_row_header
+ * @property string $column_values
+ * @property string $create_date
+ * @property string $processed_date
+ * @property integer $is_processing
+ * @property integer $records_add
+ * @property integer $records_skipped
+ * @property string $column_keys
+ */
+class SupplierImport extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'suppliers_id', 'file_path', 'is_first_row_header', 'column_values', 'create_date', 'processed_date', 'is_processing', 'records_add', 'records_skipped', 'column_keys'];
+}

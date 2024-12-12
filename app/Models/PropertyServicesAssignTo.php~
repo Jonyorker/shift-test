@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $property_services_locations_id
+ * @property integer $property_services_resources_id
+ * @property string $emp_id
+ * @property string $type
+ */
+class PropertyServicesAssignTo extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'property_services_locations_id', 'property_services_resources_id', 'emp_id', 'type'];
+}

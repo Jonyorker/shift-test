@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $eqpt_read_list_id
+ * @property integer $eqpt_read_label_id
+ * @property string $note
+ * @property integer $is_complete
+ * @property string $complete_date
+ * @property string $completed_by
+ */
+class EqptReadListLabel extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'eqpt_read_list_id', 'eqpt_read_label_id', 'note', 'is_complete', 'complete_date', 'completed_by'];
+}

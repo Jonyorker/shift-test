@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $customs_broker_package_id
+ * @property string $reason
+ * @property string $created_by
+ * @property string $created_date
+ * @property string $updated_by
+ * @property string $updated_date
+ * @property string $driver
+ * @property string $communication
+ * @property integer $mov_number
+ */
+class CustomsBrokerRejectedReason extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'customs_broker_package_id', 'reason', 'created_by', 'created_date', 'updated_by', 'updated_date', 'driver', 'communication', 'mov_number'];
+}

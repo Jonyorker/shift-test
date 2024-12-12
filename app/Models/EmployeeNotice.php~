@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $employee_id
+ * @property integer $employee_notice_type_id
+ * @property string $data
+ * @property string $removal_date
+ */
+class EmployeeNotice extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'employee_id', 'employee_notice_type_id', 'data', 'removal_date'];
+}

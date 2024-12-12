@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $user_list_id
+ * @property integer $user_list_lms_group_id
+ * @property integer $is_active
+ * @property integer $is_autoassigned
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $updated_date
+ * @property string $updated_by
+ */
+class UserListLmsEmployeeMapping extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'user_list_id', 'user_list_lms_group_id', 'is_active', 'is_autoassigned', 'created_date', 'created_by', 'updated_date', 'updated_by'];
+}

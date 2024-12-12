@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $user_code
+ * @property string $user_type
+ * @property integer $bison_employee_contact_id
+ * @property string $contact_value
+ * @property string $contact_type
+ * @property integer $sms_carrier_id
+ * @property string $created_on
+ * @property integer $is_active
+ * @property string $activation_code
+ */
+class NotificationUser extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'user_code', 'user_type', 'bison_employee_contact_id', 'contact_value', 'contact_type', 'sms_carrier_id', 'created_on', 'is_active', 'activation_code'];
+}

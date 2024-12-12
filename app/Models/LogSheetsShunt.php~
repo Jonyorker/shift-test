@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $log_date
+ * @property string $time_in_hours
+ * @property integer $log_shunt_task_id
+ * @property string $created_date
+ * @property string $ip_address
+ * @property integer $is_proccessed
+ * @property string $processed_date
+ * @property string $modified_by
+ * @property string $modified_date
+ */
+class LogSheetsShunt extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'log_date', 'time_in_hours', 'log_shunt_task_id', 'created_date', 'ip_address', 'is_proccessed', 'processed_date', 'modified_by', 'modified_date'];
+}

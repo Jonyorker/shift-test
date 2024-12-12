@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $form_id
+ * @property integer $submission_id
+ * @property integer $field_id
+ * @property string $label
+ * @property string $type
+ * @property string $submission_date
+ * @property string $value
+ */
+class FormstackSubmissions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'form_id', 'submission_id', 'field_id', 'label', 'type', 'submission_date', 'value'];
+}

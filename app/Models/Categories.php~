@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $name
+ * @property string $type
+ * @property string $applies_to
+ * @property string $find_conditions
+ * @property string $condition
+ * @property string $front_page
+ * @property integer $position
+ * @property string $counter_conditions
+ * @property string $icon
+ * @property string $built_in
+ * @property string $live_update
+ */
+class Categories extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'name', 'type', 'applies_to', 'find_conditions', 'condition', 'front_page', 'position', 'counter_conditions', 'icon', 'built_in', 'live_update'];
+}

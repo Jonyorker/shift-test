@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $domain
+ * @property string $created_date
+ * @property string $created_by
+ * @property integer $is_active
+ * @property string $title
+ * @property string $message
+ * @property string $start_date
+ * @property string $end_date
+ * @property string $route_name
+ * @property string $notification_type
+ * @property boolean $once_per_session
+ * @property integer $once
+ * @property string $country
+ */
+class SiteNotification extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'domain', 'created_date', 'created_by', 'is_active', 'title', 'message', 'start_date', 'end_date', 'route_name', 'notification_type', 'once_per_session', 'once', 'country'];
+}

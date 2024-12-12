@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $unit_number
+ * @property string $ro_number
+ * @property string $action
+ * @property string $comment
+ * @property string $create_date
+ * @property string $created_by
+ * @property string $yard_id
+ */
+class TrailerRepairCompletionHistory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'unit_number', 'ro_number', 'action', 'comment', 'create_date', 'created_by', 'yard_id'];
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $element_name
+ * @property string $description
+ */
+class Elements extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'element_name', 'description'];
+}

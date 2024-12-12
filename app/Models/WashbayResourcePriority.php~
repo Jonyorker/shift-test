@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $sort_order
+ * @property string $label
+ * @property integer $is_active
+ * @property string $priority
+ * @property integer $tractor
+ * @property integer $trailer
+ * @property integer $combo
+ */
+class WashbayResourcePriority extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'sort_order', 'label', 'is_active', 'priority', 'tractor', 'trailer', 'combo'];
+}

@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $batch_number
+ * @property string $created_date
+ * @property string $created_by
+ */
+class PayInformationExcludeBatches extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'batch_number', 'created_date', 'created_by'];
+}

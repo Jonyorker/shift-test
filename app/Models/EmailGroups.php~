@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $name
+ * @property string $email
+ * @property string $domain
+ * @property string $created_date
+ * @property string $modified_date
+ * @property integer $member_count
+ * @property boolean $is_active
+ */
+class EmailGroups extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'name', 'email', 'domain', 'created_date', 'modified_date', 'member_count', 'is_active'];
+}

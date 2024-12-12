@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $order_number
+ * @property integer $move_number
+ * @property string $activity_type
+ * @property string $operator_code
+ * @property string $start_trl_number
+ * @property string $end_trl_number
+ * @property string $dock
+ * @property string $seal_number
+ * @property integer $skid_count
+ * @property string $bill_to
+ * @property integer $staged
+ * @property string $start_time
+ * @property string $end_time
+ * @property string $created_date
+ * @property string $created_by
+ * @property integer $total_time_in_minutes
+ * @property string $carrier_id
+ * @property string $notes
+ * @property integer $po_number
+ */
+class BisonDockOperatorInfo extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['order_number', 'move_number', 'activity_type', 'operator_code', 'start_trl_number', 'end_trl_number', 'dock', 'seal_number', 'skid_count', 'bill_to', 'staged', 'start_time', 'end_time', 'created_date', 'created_by', 'total_time_in_minutes', 'carrier_id', 'notes', 'po_number'];
+}

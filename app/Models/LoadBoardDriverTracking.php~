@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $type
+ * @property integer $lgh_number
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $updated_date
+ * @property string $updated_by
+ * @property string $driver_code
+ */
+class LoadBoardDriverTracking extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'type', 'lgh_number', 'created_date', 'created_by', 'updated_date', 'updated_by', 'driver_code'];
+}

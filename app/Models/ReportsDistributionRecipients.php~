@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $distribution_id
+ * @property string $employee_id
+ * @property string $email_address
+ * @property boolean $is_cc
+ */
+class ReportsDistributionRecipients extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'distribution_id', 'employee_id', 'email_address', 'is_cc'];
+}

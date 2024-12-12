@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $returns_process_id
+ * @property string $emp_id
+ * @property string $date_created
+ * @property string $comment
+ */
+class ReturnsProcessComments extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'returns_process_id', 'emp_id', 'date_created', 'comment'];
+}

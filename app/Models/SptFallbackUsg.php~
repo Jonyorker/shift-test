@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property string $xserver_name
+ * @property string $xdttm_ins
+ * @property string $xdttm_last_ins_upd
+ * @property integer $xfallback_vstart
+ * @property integer $dbid
+ * @property integer $segmap
+ * @property integer $lstart
+ * @property integer $sizepg
+ * @property integer $vstart
+ */
+class SptFallbackUsg extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['xserver_name', 'xdttm_ins', 'xdttm_last_ins_upd', 'xfallback_vstart', 'dbid', 'segmap', 'lstart', 'sizepg', 'vstart'];
+}

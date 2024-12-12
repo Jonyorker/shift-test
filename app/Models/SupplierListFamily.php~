@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $suppliers_id
+ * @property integer $supply_list_id
+ * @property string $supplier_part_num
+ * @property integer $is_alt
+ * @property string $description
+ */
+class SupplierListFamily extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'suppliers_id', 'supply_list_id', 'supplier_part_num', 'is_alt', 'description'];
+}

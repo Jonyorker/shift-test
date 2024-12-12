@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $huddle_planner_id
+ * @property string $emp_id
+ * @property integer $sort_by
+ * @property string $assigned_date
+ */
+class HuddlePlannerAssignment extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'huddle_planner_id', 'emp_id', 'sort_by', 'assigned_date'];
+}

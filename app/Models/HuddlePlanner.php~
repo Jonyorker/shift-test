@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $huddle_project_id
+ * @property string $created_date
+ * @property string $created_by
+ * @property string $opportunity
+ * @property integer $huddle_resource_category_id
+ * @property string $due_date
+ * @property string $closed_date
+ * @property string $completed_date
+ * @property integer $huddle_resource_priority_id
+ * @property integer $parent_id
+ */
+class HuddlePlanner extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'huddle_project_id', 'created_date', 'created_by', 'opportunity', 'huddle_resource_category_id', 'due_date', 'closed_date', 'completed_date', 'huddle_resource_priority_id', 'parent_id'];
+}

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $mov_number
+ * @property integer $ltlx_order
+ * @property string $uuid
+ * @property string $date_created
+ * @property string $created_by
+ * @property string $notes
+ */
+class BisonltlDamages extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'mov_number', 'ltlx_order', 'uuid', 'date_created', 'created_by', 'notes'];
+}

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $yard_management_resource_yard_location_id
+ * @property integer $yard_management_resource_list_type_id
+ * @property integer $is_active
+ * @property integer $sort_order
+ * @property integer $mandatory_comment
+ * @property integer $yard_management_resource_action_id
+ */
+class YardManagementResourceList extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'yard_management_resource_yard_location_id', 'yard_management_resource_list_type_id', 'is_active', 'sort_order', 'mandatory_comment', 'yard_management_resource_action_id'];
+}

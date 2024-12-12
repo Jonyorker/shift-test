@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $ticket_id
+ * @property string $body
+ * @property string $created_at
+ * @property string $updated_at
+ * @property integer $created_by
+ * @property string $is_public
+ * @property string $attachment_location
+ * @property string $attachment_content_type
+ * @property string $attachment_name
+ * @property string $is_purchase
+ * @property string $is_labor
+ * @property string $is_inventory
+ * @property integer $collaborator_id
+ * @property integer $remote_id
+ * @property string $comment_type
+ * @property integer $attachment_size
+ */
+class Comments extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'ticket_id', 'body', 'created_at', 'updated_at', 'created_by', 'is_public', 'attachment_location', 'attachment_content_type', 'attachment_name', 'is_purchase', 'is_labor', 'is_inventory', 'collaborator_id', 'remote_id', 'comment_type', 'attachment_size'];
+}

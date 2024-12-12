@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $emp_id
+ * @property integer $company_id
+ * @property integer $training_course_id
+ * @property string $date_created
+ */
+class BisonTrainingCoursesExternal extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['first_name', 'last_name', 'emp_id', 'company_id', 'training_course_id', 'date_created'];
+}

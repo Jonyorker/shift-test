@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $screen_name
+ * @property string $date
+ * @property string $app_version
+ * @property string $op_system
+ * @property string $op_system_version
+ * @property integer $unique_screen_views
+ * @property integer $screen_views
+ * @property string $source
+ */
+class GoogleAnalyticsStats extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'screen_name', 'date', 'app_version', 'op_system', 'op_system_version', 'unique_screen_views', 'screen_views', 'source'];
+}

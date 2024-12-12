@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $title
+ * @property string $description
+ * @property integer $is_active
+ * @property string $created_date
+ * @property string $start_date
+ * @property string $end_date
+ * @property string $terminal
+ * @property string $meeting_dow
+ * @property string $meeting_time
+ * @property integer $huddle_resource_icebreaker_group_id
+ * @property integer $is_private
+ * @property string $type
+ */
+class HuddleProject extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'title', 'description', 'is_active', 'created_date', 'start_date', 'end_date', 'terminal', 'meeting_dow', 'meeting_time', 'huddle_resource_icebreaker_group_id', 'is_private', 'type'];
+}

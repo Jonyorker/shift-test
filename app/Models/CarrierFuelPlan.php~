@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $start_date
+ * @property string $end_date
+ * @property string $created_date
+ * @property string $updated_date
+ * @property string $created_by
+ * @property string $carrier_id
+ * @property string $updated_by
+ * @property integer $is_active
+ * @property float $total_miles
+ */
+class CarrierFuelPlan extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'start_date', 'end_date', 'created_date', 'updated_date', 'created_by', 'carrier_id', 'updated_by', 'is_active', 'total_miles'];
+}

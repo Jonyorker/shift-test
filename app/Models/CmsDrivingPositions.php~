@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $title
+ * @property string $profile
+ * @property string $emp_id
+ * @property string $modified_date
+ * @property integer $is_active
+ * @property string $intro
+ * @property string $image
+ * @property string $image_data
+ * @property integer $sort_order
+ */
+class CmsDrivingPositions extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'title', 'profile', 'emp_id', 'modified_date', 'is_active', 'intro', 'image', 'image_data', 'sort_order'];
+}

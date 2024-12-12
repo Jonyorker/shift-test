@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $slug
+ * @property integer $bison_training_company_id
+ */
+class TrainingMandatoryCompanies extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'slug', 'bison_training_company_id'];
+}

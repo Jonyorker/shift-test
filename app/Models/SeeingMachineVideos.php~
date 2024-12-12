@@ -1,0 +1,34 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $video_filename
+ * @property string $video_data
+ * @property string $tractor_number
+ * @property string $manpower_id
+ * @property string $timestamp
+ * @property string $event_type
+ * @property float $latitude
+ * @property float $longitude
+ * @property float $speed
+ * @property float $duration_seconds
+ * @property string $event_time_cst
+ * @property integer $is_reviewed
+ * @property string $assigned_to
+ * @property string $assigned_date
+ * @property string $location
+ * @property string $event_time_utc
+ * @property string $confirmation_state
+ * @property integer $is_ignored
+ */
+class SeeingMachineVideos extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'video_filename', 'video_data', 'tractor_number', 'manpower_id', 'timestamp', 'event_type', 'latitude', 'longitude', 'speed', 'duration_seconds', 'event_time_cst', 'is_reviewed', 'assigned_to', 'assigned_date', 'location', 'event_time_utc', 'confirmation_state', 'is_ignored'];
+}

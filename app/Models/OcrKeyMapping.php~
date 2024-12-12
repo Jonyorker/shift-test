@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $key_id
+ * @property string $key_desc
+ * @property string $key_text
+ * @property string $key_type
+ */
+class OcrKeyMapping extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'key_id', 'key_desc', 'key_text', 'key_type'];
+}

@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $mpp_id
+ * @property string $cc_date
+ * @property string $cc_datetime
+ * @property float $cc_latitude
+ * @property float $cc_longitude
+ * @property float $pd_latitude
+ * @property float $pd_longitude
+ * @property boolean $in_per_diem_cty
+ */
+class DriverPerDiemHistory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'mpp_id', 'cc_date', 'cc_datetime', 'cc_latitude', 'cc_longitude', 'pd_latitude', 'pd_longitude', 'in_per_diem_cty'];
+}

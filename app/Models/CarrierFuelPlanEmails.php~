@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $carrier_fuel_plan_id
+ * @property string $email_address
+ * @property integer $is_active
+ * @property string $created_date
+ * @property string $updated_date
+ * @property string $created_by
+ * @property integer $email_sent
+ */
+class CarrierFuelPlanEmails extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'carrier_fuel_plan_id', 'email_address', 'is_active', 'created_date', 'updated_date', 'created_by', 'email_sent'];
+}

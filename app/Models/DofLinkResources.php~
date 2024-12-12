@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $dof_comments_id
+ * @property integer $dof_resources_id
+ * @property boolean $value
+ */
+class DofLinkResources extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'dof_comments_id', 'dof_resources_id', 'value'];
+}

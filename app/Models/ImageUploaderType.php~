@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $label
+ * @property string $value
+ * @property integer $sort_order
+ * @property integer $is_active
+ * @property integer $folder_code
+ * @property string $route
+ * @property string $admin_dept_name
+ * @property integer $is_uploadable
+ * @property string $initial_complete_status
+ * @property string $purge_date
+ * @property string $monitored_email
+ * @property integer $is_dashboard
+ */
+class ImageUploaderType extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'label', 'value', 'sort_order', 'is_active', 'folder_code', 'route', 'admin_dept_name', 'is_uploadable', 'initial_complete_status', 'purge_date', 'monitored_email', 'is_dashboard'];
+}

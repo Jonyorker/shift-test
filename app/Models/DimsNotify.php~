@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $ID
+ * @property string $DN_subject
+ * @property string $DN_To
+ * @property string $DN_from
+ * @property string $DN_DateSent
+ * @property string $DN_Body
+ * @property string $DN_notifyType
+ */
+class DimsNotify extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['ID', 'DN_subject', 'DN_To', 'DN_from', 'DN_DateSent', 'DN_Body', 'DN_notifyType'];
+}

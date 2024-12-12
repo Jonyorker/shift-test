@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $carrier_id
+ * @property string $phone_number
+ * @property string $start_date
+ * @property string $end_date
+ * @property integer $is_active
+ * @property string $first_name
+ * @property string $email
+ * @property integer $test_int
+ * @property float $test_decimal
+ * @property string $test_image
+ * @property string $modified_date
+ */
+class YiiTestTable extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'carrier_id', 'phone_number', 'start_date', 'end_date', 'is_active', 'first_name', 'email', 'test_int', 'test_decimal', 'test_image', 'modified_date'];
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $username
+ * @property string $application_name
+ * @property string $computer_name
+ * @property string $nt_id
+ * @property string $shared_key
+ * @property string $expire_on
+ * @property string $last_used
+ */
+class RbacApplicationTokens extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'username', 'application_name', 'computer_name', 'nt_id', 'shared_key', 'expire_on', 'last_used'];
+}

@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $mov_number
+ * @property integer $ltlx_order
+ * @property string $image_type
+ * @property string $uuid
+ * @property string $load_type
+ */
+class DocktoolImages extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'mov_number', 'ltlx_order', 'image_type', 'uuid', 'load_type'];
+}

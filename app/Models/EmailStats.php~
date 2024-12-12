@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $date
+ * @property string $email_address
+ * @property integer $mails_sent
+ * @property integer $mails_received
+ * @property string $emp_id
+ * @property string $created_date
+ * @property integer $mails_read
+ */
+class EmailStats extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'date', 'email_address', 'mails_sent', 'mails_received', 'emp_id', 'created_date', 'mails_read'];
+}

@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $carrier
+ * @property string $address
+ * @property integer $sort
+ */
+class SmsCarrier extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'carrier', 'address', 'sort'];
+}

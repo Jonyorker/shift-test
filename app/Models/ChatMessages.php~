@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $thread_id
+ * @property integer $user_id
+ * @property string $uid
+ * @property string $message
+ * @property string $datetime
+ * @property string $system_name
+ * @property integer $page_number
+ * @property string $click_event
+ * @property string $click_event_label
+ */
+class ChatMessages extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'thread_id', 'user_id', 'uid', 'message', 'datetime', 'system_name', 'page_number', 'click_event', 'click_event_label'];
+}

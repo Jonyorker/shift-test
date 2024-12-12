@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $efs_expense_carrier_id
+ * @property string $efs_money_code
+ * @property string $efs_reference_number
+ * @property integer $po_header_id
+ */
+class EfsExpenseCarrierMoneyCodes extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'efs_expense_carrier_id', 'efs_money_code', 'efs_reference_number', 'po_header_id'];
+}

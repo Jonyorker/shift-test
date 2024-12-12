@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $doc_control_id
+ * @property string $title
+ * @property string $author
+ * @property string $published_date
+ * @property string $url
+ * @property integer $req_action
+ * @property integer $is_lcv_update
+ * @property integer $is_drg_update
+ * @property integer $tab_number
+ * @property string $recipient
+ * @property string $emp_id
+ * @property string $created_date
+ * @property string $modified_date
+ * @property integer $is_active
+ * @property string $memo_id
+ * @property string $email_recipient
+ * @property integer $is_memo_email_sent
+ */
+class IntraDocumentDriveMemo extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'doc_control_id', 'title', 'author', 'published_date', 'url', 'req_action', 'is_lcv_update', 'is_drg_update', 'tab_number', 'recipient', 'emp_id', 'created_date', 'modified_date', 'is_active', 'memo_id', 'email_recipient', 'is_memo_email_sent'];
+}

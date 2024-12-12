@@ -1,0 +1,5 @@
+CREATE DATABASE [TMWAMS_bison]
+GO
+
+CREATE DATABASE [TMWAMS_bison-testing]
+GO

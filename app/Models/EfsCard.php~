@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $company_id
+ * @property string $driver_id
+ * @property string $card_number
+ * @property string $status
+ * @property string $created_date
+ * @property string $expired_date
+ * @property integer $is_test
+ * @property string $card_identification
+ * @property float $current_balance
+ * @property string $last_updated_date
+ * @property integer $policy_number
+ * @property boolean $is_digital
+ * @property integer $adv_request
+ * @property string $last_cash_adv_mobile
+ * @property float $adv_balance
+ */
+class EfsCard extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'company_id', 'driver_id', 'card_number', 'status', 'created_date', 'expired_date', 'is_test', 'card_identification', 'current_balance', 'last_updated_date', 'policy_number', 'is_digital', 'adv_request', 'last_cash_adv_mobile', 'adv_balance'];
+}

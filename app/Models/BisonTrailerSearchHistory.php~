@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $date_lookup
+ * @property string $trailer_number
+ * @property string $ip_address
+ * @property string $url
+ */
+class BisonTrailerSearchHistory extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['emp_id', 'date_lookup', 'trailer_number', 'ip_address', 'url'];
+}

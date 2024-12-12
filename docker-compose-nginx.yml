@@ -1,0 +1,225 @@
+name: laravel_stack
+
+services:
+##  Kinda works, but forces the app to only access the docker DB's not ideal for our current environemnt
+    shed:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build:
+            context: .
+            dockerfile: ./docker/php-8.1-fpm/Dockerfile
+        container_name: shed
+        restart: unless-stopped
+        tty: true
+        environment:
+            SERVICE_NAME: app
+            SERVICE_TAGS: dev
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
+            - ./docker/php-8.1-fpm/local.ini:/usr/local/etc/php/conf.d/local.ini
+#        network_mode: host
+        ports:
+            - "127.0.0.1:9001:9000"
+        depends_on:
+            - monitoring-db
+            - sqlsrv-db
+            - sqlimage-db
+            - sqlimg-db
+            - dynamicsgp-db
+            - analytics2012-db
+            - tmt-db
+            - analyticssql-db
+            - sqlweb-db
+            - tranztec-db
+        networks:
+            - app
+    webserver:
+        image: nginx:alpine
+        container_name: webserver
+        restart: unless-stopped
+        tty: true
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx/:/etc/nginx/conf.d/
+        ports:
+            - "80:80"
+            - "443:443"
+        networks:
+            - app
+        depends_on:
+            - shed
+    redis:
+        image: redis:7.2.5-alpine
+        restart: always
+        container_name: redis
+        ports:
+            - '${REDIS_PORT}:6379'
+        command: redis-server --save 20 1 --loglevel warning --requirepass '${REDIS_PASSWORD}'
+        volumes:
+            - redis-cache:/data
+        networks:
+            - app
+    redis-insight:
+        image: redis/redisinsight:latest
+        restart: always
+        container_name: redis-insight
+        ports:
+            - "5540:5540"
+        volumes:
+            - redis-insight:/data
+        networks:
+            - app
+        depends_on:
+            - redis
+    rabbitmq:
+        image: rabbitmq:3.9.29-management-alpine
+        ports:
+            - "${RABBITMQ_PORT}:5672"
+            - "${RABBITMQ_MANAGEMENT_PORT}:15672"
+        volumes:
+            - rabbitmq_data:/data
+        networks:
+            - app
+        depends_on:
+            - monitoring-db
+    monitoring-db:
+        container_name: monitoring-db
+        image: 'timescale/timescaledb:latest-pg16'
+        ports:
+            - '${FORWARD_DB_PORT:-5432}:5432'
+        environment:
+            PGPASSWORD: '${MONITORING_DB_PASSWORD:-secret}'
+            POSTGRES_DB: '${MONITORING_DB_DATABASE}'
+            POSTGRES_USER: '${MONITORING_DB_USERNAME}'
+            POSTGRES_PASSWORD: '${MONITORING_DB_PASSWORD:-secret}'
+        volumes:
+            - 'monitoring-db-volume:/var/lib/postgresql/data'
+            - './docker/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
+        networks:
+            - app
+    sqlsrv-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/sqlsrv
+        environment:
+            SA_PASSWORD: '${BISONWEB_DB_PASSWORD}'
+        ports:
+            - '${BISONWEB_DB_PORT}:1433'
+        volumes:
+            - sqlsrv-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    sqlimage-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/sqlimage
+        environment:
+            SA_PASSWORD: '${SQLIMAGE_DB_PASSWORD}'
+        ports:
+            - '${SQLIMAGE_DB_PORT}:1433'
+        volumes:
+            - sqlimage-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    sqlimg-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/sqlimg
+        environment:
+            SA_PASSWORD: '${SQLIMG_DB_PASSWORD}'
+        ports:
+            - '${SQLIMG_DB_PORT}:1433'
+        volumes:
+            - sqlimg-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    dynamicsgp-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/dynamicsgp
+        environment:
+            SA_PASSWORD: '${DYNAMICSGP_DB_PASSWORD}'
+        ports:
+            - '${DYNAMICSGP_DB_PORT}:1433'
+        volumes:
+            - dynamicsgp-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    analytics2012-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/analytics2012
+        environment:
+            SA_PASSWORD: '${ANAYLYTICS2012_DB_PASSWORD}'
+        ports:
+            - '${ANAYLYTICS2012_DB_PORT}:1433'
+        volumes:
+            - analytics2012-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    tmt-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/tmt
+        environment:
+            SA_PASSWORD: '${TMT_DB_PASSWORD}'
+        ports:
+            - '${TMT_DB_PORT}:1433'
+        volumes:
+            - tmt-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    analyticssql-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/analyticssql
+        environment:
+            SA_PASSWORD: '${ANALYTICSSQL_DB_PASSWORD}'
+        ports:
+            - '${ANALYTICSSQL_DB_PORT}:1433'
+        volumes:
+            - analyticssql-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    sqlweb-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/sqlweb
+        environment:
+            SA_PASSWORD: '${SQLWEB_DB_PASSWORD}'
+        ports:
+            - '${SQLWEB_DB_PORT}:1433'
+        volumes:
+            - sqlweb-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+    tranztec-db:
+        platform: linux/amd64 # This is for ARM devices to build the right platform. Mac M series mostly.
+        build: ./docker/tranztec
+        environment:
+            SA_PASSWORD: '${TRANZTEC_DB_PASSWORD}'
+        ports:
+            - '${TRANZTEC_DB_PORT}:1433'
+        volumes:
+            - tranztec-db-volume:/var/opt/mssql
+        restart: always
+        networks:
+            - app
+networks:
+    app:
+        driver: bridge
+volumes:
+    monitoring-db-volume:
+    sqlsrv-db-volume:
+    sqlimage-db-volume:
+    sqlimg-db-volume:
+    dynamicsgp-db-volume:
+    analytics2012-db-volume:
+    tmt-db-volume:
+    analyticssql-db-volume:
+    sqlweb-db-volume:
+    tranztec-db-volume:
+    redis-cache:
+    redis-insight:
+    rabbitmq_data:
+

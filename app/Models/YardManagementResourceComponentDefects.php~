@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $label
+ * @property string $code
+ * @property integer $is_active
+ * @property integer $component_id
+ * @property integer $bison_edvirmapping_id
+ */
+class YardManagementResourceComponentDefects extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'label', 'code', 'is_active', 'component_id', 'bison_edvirmapping_id'];
+}

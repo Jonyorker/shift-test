@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property integer $cms_driving_postings_id
+ * @property string $application_date
+ * @property string $ip_address
+ * @property integer $notice_sent
+ * @property integer $activity_id
+ * @property integer $is_awarded
+ */
+class CmsDrivingInternalApplicants extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'cms_driving_postings_id', 'application_date', 'ip_address', 'notice_sent', 'activity_id', 'is_awarded'];
+}

@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $ip_address
+ * @property string $created_date
+ * @property integer $mov_number
+ * @property string $cmp_id
+ * @property string $stp_event
+ * @property string $comment
+ */
+class CityPayrollComments extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'ip_address', 'created_date', 'mov_number', 'cmp_id', 'stp_event', 'comment'];
+}

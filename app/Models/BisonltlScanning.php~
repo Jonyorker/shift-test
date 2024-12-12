@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $ltlx_order
+ * @property integer $scanned_skids
+ */
+class BisonltlScanning extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'ltlx_order', 'scanned_skids'];
+}

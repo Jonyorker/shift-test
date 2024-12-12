@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $emp_id
+ * @property string $event_date
+ * @property integer $event_date_unix
+ * @property string $rabbit_id
+ * @property integer $queue_id
+ * @property integer $queue_count
+ */
+class ChatUserTracking extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'emp_id', 'event_date', 'event_date_unix', 'rabbit_id', 'queue_id', 'queue_count'];
+}

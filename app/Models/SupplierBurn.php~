@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property string $item_num
+ * @property string $terminal
+ * @property string $used_date
+ * @property float $quantity
+ */
+class SupplierBurn extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'item_num', 'terminal', 'used_date', 'quantity'];
+}

@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property integer $id
+ * @property integer $yard_monitor_id
+ * @property integer $safety_shoes
+ * @property integer $safety_vest
+ * @property string $added_date
+ */
+class YardMonitorPpeHistorical extends Model
+{
+    /**
+     * @var array
+     */
+    protected $fillable = ['id', 'yard_monitor_id', 'safety_shoes', 'safety_vest', 'added_date'];
+}
