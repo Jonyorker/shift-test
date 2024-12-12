@@ -96,6 +96,6 @@ class TrlStorage extends Model
      */
     public function expirations()
     {
-        return $this->hasMany('App\Models\psbison\unused\Expiration', 'trlStgID', 'tstg_id');
+        return $this->hasMany(\App\Models\psbison\unused\Expiration::class, 'trlStgID', 'tstg_id');
     }
 }

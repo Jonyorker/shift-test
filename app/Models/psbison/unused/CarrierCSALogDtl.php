@@ -56,6 +56,6 @@ class CarrierCSALogDtl extends Model
      */
     public function expirations()
     {
-        return $this->hasMany('App\Models\psbison\unused\Expiration', 'carriercsalogdtl_id');
+        return $this->hasMany(\App\Models\psbison\unused\Expiration::class, 'carriercsalogdtl_id');
     }
 }
