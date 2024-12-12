@@ -188,7 +188,7 @@ return [
 
         'monitoring' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
+            'url' => env('DB_URL'),
             'host' => env('MONITORING_DB_HOST'),
             'port' => env('MONITORING_DB_PORT'),
             'database' => env('MONITORING_DB_DATABASE'),
@@ -203,7 +203,7 @@ return [
 
         'monitoring-telescope-docker' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
+            'url' => env('DB_URL'),
             'host' => env('DOCKER_TELESCOPE_DB_HOST'),
             'port' => env('MONITORING_DB_PORT'),
             'database' => env('MONITORING_DB_DATABASE'),
